@@ -29,6 +29,18 @@ function App() {
       .then(loadData);
   }
 
+  function deleteItem(id) {
+    fetch("https://qr3zd2-8080.csb.app/api/list/" + id, {
+      method: "DELETE",
+      headers: {
+        "Content-type": " application/json; charset=UTF-8",
+      },
+      mode: "cors",
+    })
+      .then((x) => x.json())
+      .then(loadData);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -36,7 +48,7 @@ function App() {
       </header>
       <main>
         <ShoppingForm addItem={addItem} />
-        <ShoppingList items={shoppingList} />
+        <ShoppingList items={shoppingList} deleteItem={deleteItem} />
       </main>
     </div>
   );
