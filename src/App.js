@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState, useEffect } from "react";
+import ShoppingForm from "./Components/ShoppingForm/ShoppingForm";
+import ShoppingList from "./Components/ShoppingList/ShoppingList";
 
 function App() {
+  const [shoppingList, setShoppingList] = useState([]);
+
+  useEffect(() => {
+    fetch("https://qr3zd2-8080.csb.app/api/list")
+      .then((x) => x.json())
+      .then((response) => {
+        setShoppingList(response);
+      });
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1> Shopping List </h1>
       </header>
+      <main>
+        <ShoppingForm />
+        <ShoppingList items={shoppingList} />
+      </main>
     </div>
   );
 }
