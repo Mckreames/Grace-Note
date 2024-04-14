@@ -1,6 +1,8 @@
 :root {
-  --light-grey: #202023;
-  --grey: #29292c;
+  --electric-blue: #00c8b5;
+  --goldenrod: #DAA520;
+  --grey: #202023;
+  --light-grey: #29292c;
 }
 
 .App {
@@ -12,7 +14,7 @@
 h1 {
   font-weight: bolder;
   font-size: 70px !important;
-  color: goldenrod !important;
+  color: var(--electric-blue) !important;
 }
 
 ul, label {

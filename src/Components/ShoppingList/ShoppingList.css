@@ -1,3 +1,14 @@
-ul, li {
-    background-color: var(--light-grey) !important;
+
+ol, ol > li {
+    color: black;
+    background-color: rgb(221, 221, 221);
+    text-align: left;
+    font-weight: bolder;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid black;
+}
+
+ol {
+    border-radius: 0 0 20px 20px;
 }

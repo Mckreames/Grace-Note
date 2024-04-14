@@ -47,7 +47,7 @@ function App() {
     <div className="App">
       <GraceNoteNav />
       <header className="App-header">
-        <h1> Grace Note </h1>
+        <h1 className="pt-4 pb-4"> Song List </h1>
       </header>
       <main>
         <ShoppingForm addItem={addItem} />

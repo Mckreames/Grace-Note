@@ -22,9 +22,9 @@ export default function GraceNoteNav() {
     const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
-      <Navbar >
-        <NavbarBrand href="/">Grace Note</NavbarBrand>
+    <div className="nav-sect">
+      <Navbar className="offset-1 col-10">
+        <NavbarBrand href="/" className="nav-brand">Grace Note</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
@@ -47,8 +47,11 @@ export default function GraceNoteNav() {
                 <DropdownItem>Song Selector</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
+            <NavItem>
+              <NavLink href="#">Settings</NavLink>
+            </NavItem>
           </Nav>
-          <NavbarText>Settings</NavbarText>
+          <NavbarText></NavbarText>
         </Collapse>
       </Navbar>
     </div>

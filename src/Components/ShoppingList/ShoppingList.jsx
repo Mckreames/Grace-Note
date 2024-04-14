@@ -28,5 +28,9 @@ export default function ShoppingList({ items, deleteItem }) {
         />
     );
 
-    return <ul className="container-fluid offset-1 col-10 pt-5 pb-5 list-items">{ ItemsJsx }</ul>
+    return (
+        <div className="sheet">
+            <ol className="container-fluid offset-1 col-10 pt-5 pb-5 list-items">{ ItemsJsx }</ol>
+        </div>
+    )
 }
