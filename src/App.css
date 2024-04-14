@@ -1,4 +1,23 @@
-.App {
-  text-align: center;
+:root {
+  --light-grey: #202023;
+  --grey: #29292c;
 }
 
+.App {
+  text-align: center;
+  background-color: #202023;
+  min-height: 100vh;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 70px !important;
+  color: goldenrod !important;
+}
+
+ul, label {
+  color: white !important;
+  font-size: 20px;
+  padding-right: 15px;
+  list-style-type: none;
+}

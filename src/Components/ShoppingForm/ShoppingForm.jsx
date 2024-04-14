@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./ShoppingForm.css";
 
 export default function ShoppingForm({ addItem }) {
 
@@ -21,17 +22,19 @@ export default function ShoppingForm({ addItem }) {
 
 
   return (
-    <form action="#" method="POST" onSubmit={handleSubmit}>
-        <label htmlFor="item">Item</label>
+    <form action="#" method="POST" onSubmit={handleSubmit} className="pt-5 pb-5 offset-1 col-10 form">
+        <label htmlFor="item">Song</label>
         <input
+            className="input"
             type="text"
             required
             id="item"
             name="item"
             value={item} 
             onChange={handleItemChange} />
-        <label htmlFor="quantity">Quantity</label>
+        <label htmlFor="quantity">BPM</label>
         <input 
+            className="input"
             type="number"
             id="quantity"
             name="quantity"

@@ -1,0 +1,7 @@
+.form {
+    background-color: var(--grey);
+}
+
+.input {
+    margin-right: 5rem;
+}

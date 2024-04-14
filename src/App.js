@@ -1,5 +1,7 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import GraceNoteNav from "./Components/GraceNoteNav/GraceNoteNav";
 import ShoppingForm from "./Components/ShoppingForm/ShoppingForm";
 import ShoppingList from "./Components/ShoppingList/ShoppingList";
 
@@ -43,8 +45,9 @@ function App() {
 
   return (
     <div className="App">
+      <GraceNoteNav />
       <header className="App-header">
-        <h1> Shopping List </h1>
+        <h1> Grace Note </h1>
       </header>
       <main>
         <ShoppingForm addItem={addItem} />
