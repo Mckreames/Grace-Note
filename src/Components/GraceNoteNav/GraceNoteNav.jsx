@@ -24,7 +24,12 @@ export default function GraceNoteNav() {
   return (
     <div className="nav-sect">
       <Navbar className="offset-1 col-10">
-        <NavbarBrand href="/" className="nav-brand">Grace Note</NavbarBrand>
+        <NavbarBrand href="/" className="nav-brand">
+          <img
+            alt="logo"
+            src="./Imgs/grace-note-high-resolution-logo-transparent.png"
+          />
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>

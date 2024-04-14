@@ -17,6 +17,10 @@
     color: var(--electric-blue) !important;
 }
 
+.navbar-toggler-icon {
+    color: var(--electric-blue) !important;
+}
+
 .nav-link {
     color: white;
     font-size: 25px;
