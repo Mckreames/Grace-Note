@@ -1,6 +1,7 @@
 .nav-sect {
     height: 85px;
     color: white !important;
+    background-color: var(--grey);
     box-shadow: 1px 1px 10px var(--electric-blue);
 }
 

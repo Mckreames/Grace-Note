@@ -7,7 +7,9 @@
 
 .App {
   text-align: center;
-  background-color: #202023;
+  background: url("./Imgs/Blue_Corner_Blob.png") no-repeat;
+  background-size: cover;
+  /* background-color: #202023; */
   min-height: 100vh;
 }
 
