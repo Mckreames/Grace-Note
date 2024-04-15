@@ -19,6 +19,16 @@ h1 {
   color: var(--electric-blue) !important;
 }
 
+h2, h3, h4, h5, h6 {
+  color: var(--goldenrod) !important;
+  font-weight: normal !important;
+  background-color: var(--light-grey);
+}
+
+.save-your-favorites {
+  border-radius: 20px;
+}
+
 ul, label {
   color: white !important;
   font-size: 20px;

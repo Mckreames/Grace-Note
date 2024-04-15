@@ -47,7 +47,10 @@ function App() {
     <div className="App">
       <GraceNoteNav />
       <header className="App-header">
-        <h1 className="pt-4 pb-4"> Song List </h1>
+        <h1 className="pt-4"> Song List </h1>
+        <h3 className="offset-4 col-4 pt-2 pb-2 save-your-favorites">
+          Save your favorite songs for later!
+        </h3>
       </header>
       <main>
         <ShoppingForm addItem={addItem} />
