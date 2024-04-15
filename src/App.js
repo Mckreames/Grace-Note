@@ -18,10 +18,10 @@ function App() {
 
   useEffect(loadData, []);
 
-  function addItem(item, quantity) {
+  function addItem(name, artist, songKey, bpm) {
     fetch("https://qr3zd2-8080.csb.app/api/list/new", {
       method: "POST",
-      body: JSON.stringify({ item, quantity }),
+      body: JSON.stringify({ name, artist, songKey, bpm }),
       headers: {
         "Content-type": "application/json; charset=UTF-8",
       },
