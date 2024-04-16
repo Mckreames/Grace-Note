@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/node-shopping-list/static/css/main.73c9d015.css",
-    "main.js": "/node-shopping-list/static/js/main.d443e0cb.js",
+    "main.js": "/node-shopping-list/static/js/main.ee61ab9d.js",
     "static/media/grace-note-high-resolution-logo-transparent.png": "/node-shopping-list/static/media/grace-note-high-resolution-logo-transparent.bbd5fb24ea047494565d.png",
     "index.html": "/node-shopping-list/index.html",
     "main.73c9d015.css.map": "/node-shopping-list/static/css/main.73c9d015.css.map",
-    "main.d443e0cb.js.map": "/node-shopping-list/static/js/main.d443e0cb.js.map"
+    "main.ee61ab9d.js.map": "/node-shopping-list/static/js/main.ee61ab9d.js.map"
   },
   "entrypoints": [
     "static/css/main.73c9d015.css",
-    "static/js/main.d443e0cb.js"
+    "static/js/main.ee61ab9d.js"
   ]
 }
