@@ -1,5 +1,21 @@
 import React, { useState } from 'react';
-import "./ShoppingForm.css";
+import "./SongAddForm.css";
+import "./SongListPersonal.css";
+
+function ShoppingItem({ id, name, artist, songKey, bpm, deleteItem}) {
+
+    function handleDelete(event) {
+        event.preventDefault();
+        deleteItem(id);
+    }
+
+    return (
+        <li>
+            <span>{name} {artist} {songKey} ({bpm})</span>
+            <button onClick={handleDelete} className="float-end">Delete</button>
+        </li>
+    );
+}
 
 export default function ShoppingForm({ addItem }) {
 
@@ -7,6 +23,20 @@ export default function ShoppingForm({ addItem }) {
     const [artist, setArtist] = useState('');
     const [songKey, setSongKey] = useState('');
     const [bpm, setBPM] = useState(0);
+
+
+    const ItemsJsx = items.map(listItem => 
+        <ShoppingItem 
+            key={listItem.id} 
+            id={listItem.id}
+            name={listItem.name}
+            artist={listItem.artist}
+            songKey={listItem.songKey}
+            bpm={listItem.bpm}
+            deleteItem={deleteItem}
+        />
+    );
+
 
     function handleNameChange(event) {
         setName(event.target.value);
