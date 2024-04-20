@@ -1,14 +1,22 @@
 {
   "files": {
-    "main.css": "/node-shopping-list/static/css/main.73c9d015.css",
-    "main.js": "/node-shopping-list/static/js/main.ee61ab9d.js",
-    "static/media/grace-note-high-resolution-logo-transparent.png": "/node-shopping-list/static/media/grace-note-high-resolution-logo-transparent.bbd5fb24ea047494565d.png",
+    "main.css": "/node-shopping-list/static/css/main.c3fea735.css",
+    "main.js": "/node-shopping-list/static/js/main.c767803d.js",
+    "static/media/bubblyGum.jpg": "/node-shopping-list/static/media/bubblyGum.3a05f3333089eec4cb6b.jpg",
+    "static/media/groupWaveOnStage.jpg": "/node-shopping-list/static/media/groupWaveOnStage.75d6e169ad8d775c8307.jpg",
+    "static/media/upUp.jpg": "/node-shopping-list/static/media/upUp.9efd3f0325d0d2274c42.jpg",
+    "static/media/Reach.jpg": "/node-shopping-list/static/media/Reach.3daca38511a5ede46350.jpg",
+    "static/media/wrestleMic.jpg": "/node-shopping-list/static/media/wrestleMic.281709be0b7c55751e23.jpg",
+    "static/media/theaterStyle.jpg": "/node-shopping-list/static/media/theaterStyle.11e54ec3a262b9e98a2d.jpg",
+    "static/media/BlackBun.jpg": "/node-shopping-list/static/media/BlackBun.f46460c8b978338048d1.jpg",
+    "static/media/NameAndSloganOnly.png": "/node-shopping-list/static/media/NameAndSloganOnly.dd751ecd5a43e7c6678a.png",
+    "static/media/LogoOnly.png": "/node-shopping-list/static/media/LogoOnly.00c3de19fa2fb94f8ea8.png",
     "index.html": "/node-shopping-list/index.html",
-    "main.73c9d015.css.map": "/node-shopping-list/static/css/main.73c9d015.css.map",
-    "main.ee61ab9d.js.map": "/node-shopping-list/static/js/main.ee61ab9d.js.map"
+    "main.c3fea735.css.map": "/node-shopping-list/static/css/main.c3fea735.css.map",
+    "main.c767803d.js.map": "/node-shopping-list/static/js/main.c767803d.js.map"
   },
   "entrypoints": [
-    "static/css/main.73c9d015.css",
-    "static/js/main.ee61ab9d.js"
+    "static/css/main.c3fea735.css",
+    "static/js/main.c767803d.js"
   ]
 }
