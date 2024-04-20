@@ -1,5 +1,6 @@
 import React from 'react';
 import "./NotFound.css";
+import { Link } from 'react-router-dom';
 
 
 
@@ -28,8 +29,8 @@ export default function NotFound() {
         <ul className="offset-3 col-6 text-start">
             <li className="pb-4">If a link sent you here, that may mean the link is no longer a working link.</li>
             <li className="pb-4">If you've manually entered the URL, you may have gotten it wrong</li>
-            <li className="pb-4">Click <a href="#" className="fancy-link">here</a> to visit our homepage</li>
-            <li className="pb-4">If you don't know what Grace Note is, click <a href="#" className="fancy-link">here</a> to find out all about our FREE gospel music app and all the features that come along with it!</li>
+            <li className="pb-4">Click <Link to="/" style={{ textDecoration: 'none' }}><a className="fancy-link">here</a></Link> to visit our homepage</li>
+            <li className="pb-4">If you don't know what Grace Note is, click <Link to="/about" style={{ textDecoration: 'none' }}><a className="fancy-link">here</a></Link> to find out all about our FREE gospel music app and all the features that come along with it!</li>
             <li className="pb-4">If all else fails, our servers may be down 😣 Check back in a little later. We promise we won't take too long </li>
             <li className="pb-4">Hey Zsolt! 👋🏽👋🏽👋🏽</li>
         </ul>

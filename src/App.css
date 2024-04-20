@@ -89,3 +89,24 @@ ul {
   border-color: var(--electric-blue);
   color: var(--electric-blue);
 }
+
+.ter-btn {
+  border-radius: 50px; 
+  background: var(--dark-grey);
+  color: white;
+}
+
+.ter-btn:hover {
+  background: var(--electric-blue);
+}
+
+.quar-btn {
+  background: linear-gradient(var(--electric-blue) 80%, var(--light-grey) 95%);
+  color: white;
+  box-shadow: 0 0 20px grey;
+  border: none;
+}
+
+.quar-btn:hover {
+  background: linear-gradient(var(--electric-blue), var(--dark-grey));
+}

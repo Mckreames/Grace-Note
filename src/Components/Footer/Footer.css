@@ -2,3 +2,7 @@
     background: rgb(12, 12, 12);
     color: grey;
 }
+
+.Link a:hover {
+    color: var(--electric-blue);
+}

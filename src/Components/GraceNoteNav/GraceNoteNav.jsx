@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./GraceNoteNav.css";
+import { Link } from 'react-router-dom';
 import {
     Collapse,
     Navbar,
@@ -23,25 +24,29 @@ export default function GraceNoteNav() {
     const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="nav-sect">
+    <div className="mb-2 nav-sect">
       <Navbar className="offset-1 col-10" expand="md">
-        <NavbarBrand href="/" className="nav-brand">
-          <img
-          className="app-logo"
-            alt="logo"
-            src={logo}
-          />
+        <NavbarBrand className="nav-brand">
+          <Link to="/">
+            <img
+            className="app-logo"
+              alt="logo"
+              src={logo}
+            />
+          </Link>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Home</NavLink>
+              <Link to="/" style={{ textDecoration: 'none' }}>
+                <NavLink>Home</NavLink>
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-                Account
-              </NavLink>
+              <Link to="/account" style={{ textDecoration: 'none' }}>
+                <NavLink>Account</NavLink>
+              </Link>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
@@ -49,13 +54,15 @@ export default function GraceNoteNav() {
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>Search Song</DropdownItem>
-                <DropdownItem>Song List</DropdownItem>
+                <DropdownItem>Song Lists</DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>Song Selector</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
             <NavItem>
-              <NavLink href="#">Settings</NavLink>
+              <Link to="/settings" style={{ textDecoration: 'none' }}>
+                <NavLink>Settings</NavLink>
+              </Link>
             </NavItem>
           </Nav>
           <NavbarText></NavbarText>
