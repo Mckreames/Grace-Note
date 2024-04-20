@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/node-shopping-list/static/css/main.c3fea735.css",
-    "main.js": "/node-shopping-list/static/js/main.c767803d.js",
+    "main.css": "/node-shopping-list/static/css/main.108659c3.css",
+    "main.js": "/node-shopping-list/static/js/main.78bd029e.js",
+    "static/media/threeGuitars.jpg": "/node-shopping-list/static/media/threeGuitars.119a44c8b4f0cf77db2e.jpg",
     "static/media/bubblyGum.jpg": "/node-shopping-list/static/media/bubblyGum.3a05f3333089eec4cb6b.jpg",
     "static/media/groupWaveOnStage.jpg": "/node-shopping-list/static/media/groupWaveOnStage.75d6e169ad8d775c8307.jpg",
     "static/media/upUp.jpg": "/node-shopping-list/static/media/upUp.9efd3f0325d0d2274c42.jpg",
     "static/media/Reach.jpg": "/node-shopping-list/static/media/Reach.3daca38511a5ede46350.jpg",
+    "static/media/guitarLean.jpg": "/node-shopping-list/static/media/guitarLean.5c0c1aa9610831bdc676.jpg",
     "static/media/wrestleMic.jpg": "/node-shopping-list/static/media/wrestleMic.281709be0b7c55751e23.jpg",
-    "static/media/theaterStyle.jpg": "/node-shopping-list/static/media/theaterStyle.11e54ec3a262b9e98a2d.jpg",
     "static/media/BlackBun.jpg": "/node-shopping-list/static/media/BlackBun.f46460c8b978338048d1.jpg",
+    "static/media/HandsUpNobodyMove.jpg": "/node-shopping-list/static/media/HandsUpNobodyMove.e6063ca2c17720932b58.jpg",
+    "static/media/theaterStyle.jpg": "/node-shopping-list/static/media/theaterStyle.8a7ff305b63dababd4b6.jpg",
+    "static/media/redhead.jpg": "/node-shopping-list/static/media/redhead.6fe622c3911eafb09965.jpg",
     "static/media/NameAndSloganOnly.png": "/node-shopping-list/static/media/NameAndSloganOnly.dd751ecd5a43e7c6678a.png",
     "static/media/LogoOnly.png": "/node-shopping-list/static/media/LogoOnly.00c3de19fa2fb94f8ea8.png",
     "index.html": "/node-shopping-list/index.html",
-    "main.c3fea735.css.map": "/node-shopping-list/static/css/main.c3fea735.css.map",
-    "main.c767803d.js.map": "/node-shopping-list/static/js/main.c767803d.js.map"
+    "main.108659c3.css.map": "/node-shopping-list/static/css/main.108659c3.css.map",
+    "main.78bd029e.js.map": "/node-shopping-list/static/js/main.78bd029e.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3fea735.css",
-    "static/js/main.c767803d.js"
+    "static/css/main.108659c3.css",
+    "static/js/main.78bd029e.js"
   ]
 }
