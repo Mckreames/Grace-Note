@@ -1,0 +1,91 @@
+:root {
+  --electric-blue: #00c8b5;
+  --goldenrod: #DAA520;
+  --dark-grey: #1a1a1d;
+  --grey: #202023;
+  --light-grey: #29292c;
+}
+
+.App {
+  text-align: center;
+  /* background: url("./Imgs/Blue_Corner_Blob.png") no-repeat; */
+  background-size: cover;
+  background-color: #202023;
+  min-height: 100vh;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 70px !important;
+  color: var(--electric-blue) !important;
+}
+
+h2, h3, h4, h5, h6 {
+  color: var(--goldenrod) !important;
+  font-weight: normal !important;
+  /* background-color: var(--light-grey); */
+}
+
+p {
+  color: white;
+
+}
+
+label {
+  color: white !important;
+  font-size: 20px;
+  padding-right: 15px;
+  list-style-type: none;
+}
+
+ul {
+  color: white;
+  font-size: 20px;
+  padding-right: 15px;
+  list-style-type:square
+}
+
+.fancy-text {
+  text-decoration: none;
+  background-image: linear-gradient(90deg, var(--electric-blue), var(--light-grey));
+  background-size: 100% 3px;
+  background-repeat: no-repeat;
+  background-position: left 1.5em;
+  padding-block: .25em;
+
+}
+
+.fancy-link {
+  text-decoration: none;
+  background-image: linear-gradient(90deg, var(--electric-blue), var(--light-grey));
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left 1.5em;
+  padding-block: .25em;
+  color: var(--goldenrod);
+  transition: background-size 400ms;
+}
+
+.fancy-link:hover,
+.fancy-link:focus,
+.prim-btn:hover {
+  background-size: 100% 3px;
+}
+
+.prim-btn {
+  background: var(--dark-grey);
+  border-color: var(--electric-blue);
+  color: var(--electric-blue);
+}
+
+.sec-btn {
+  background: var(--electric-blue);
+  border-color: var(--electric-blue);
+  color: white;
+}
+
+.sec-btn:hover {
+  background: var(--dark-grey);
+  border-color: var(--electric-blue);
+  color: var(--electric-blue);
+}

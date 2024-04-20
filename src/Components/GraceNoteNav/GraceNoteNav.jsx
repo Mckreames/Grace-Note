@@ -14,7 +14,7 @@ import {
     DropdownItem,
     NavbarText,
 } from 'reactstrap';
-import logo from './Imgs/grace-note-high-resolution-logo-transparent.png';
+import logo from './Imgs/LogoOnly.png';
 
 export default function GraceNoteNav() {
 
@@ -24,7 +24,7 @@ export default function GraceNoteNav() {
 
   return (
     <div className="nav-sect">
-      <Navbar className="offset-1 col-10">
+      <Navbar className="offset-1 col-10" expand="md">
         <NavbarBrand href="/" className="nav-brand">
           <img
           className="app-logo"

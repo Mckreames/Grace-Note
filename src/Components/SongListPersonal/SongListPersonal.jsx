@@ -1,5 +1,5 @@
 import React from 'react';
-import "./ShoppingList.css";
+import "./SongListPersonal.css";
 
 function ShoppingItem({ id, name, artist, songKey, bpm, deleteItem}) {
 

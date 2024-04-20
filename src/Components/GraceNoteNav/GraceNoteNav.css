@@ -1,6 +1,6 @@
 .nav-sect {
     height: 120px;
-    color: white !important;
+    /* color: white !important; */
     background-color: var(--grey);
     box-shadow: 1px 1px 10px var(--electric-blue);
 }
@@ -14,7 +14,7 @@
 }
 
 .app-logo {
-    width: 400px;
+    width: 90px;
 }
 
 .navbar-toggler {
@@ -26,8 +26,9 @@
 }
 
 .nav-link {
-    color: white;
+    color: var(--goldenrod);
     font-size: 25px;
+    font-weight: lighter;
     background-color: var(--grey);
     border-radius: 0 0 10px 10px;
 }

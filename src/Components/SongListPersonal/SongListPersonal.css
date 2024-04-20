@@ -1,0 +1,16 @@
+
+ol, ol > li {
+    color: black;
+    /* background-color: rgb(221, 221, 221); */
+    text-align: left;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid black;
+}
+
+ol {
+    background: linear-gradient(147deg, #ccffff 5%, #ffefc3 90%);
+    border-radius: 0 0 20px 20px;
+}
