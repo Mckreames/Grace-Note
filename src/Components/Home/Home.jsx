@@ -66,7 +66,7 @@ export default function Home() {
                         <div className="offset-1 col-5 pt-5 home-newsletter">
                             <h3 className="pb-3 home-newsletter-head">Join Our Newsletter!</h3>
                             <p className="pb-3 p-text">We'll keep you updated on the newest songs releasing, new lyrics, chord charts, new artists, and even concerts in your area!</p>
-                            <button className="col-5 prim-btn">Sign Up</button>
+                            <button className="col-5 prim-btn">Let's Go!</button>
                             <button className="col-5 sec-btn">Newsletters</button>
                         </div>
                         <div className="offset-1 col-4">
