@@ -11,7 +11,6 @@ import wrestleMic from "./Imgs/wrestleMic.jpg";
 import guitarLean from "./Imgs/guitarLean.jpg";
 import HandsUpNobodyMove from "./Imgs/HandsUpNobodyMove.jpg";
 import threeGuitars from "./Imgs/threeGuitars.jpg";
-import redhead from "./Imgs/redhead.jpg";
 import Lottie from "@lottiefiles/react-lottie-player";
 import { Link } from 'react-router-dom';
 import {UncontrolledCarousel} from "reactstrap" ;

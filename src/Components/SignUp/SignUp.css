@@ -1,0 +1,32 @@
+.sign-up-sheet {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(var(--electric-blue), var(--dark-grey));
+  height: calc(100vh - 200px);
+}
+
+.sign-up-layer {
+  animation: moveUp 60s ease-in-out infinite;
+}
+
+.sign-up-img {
+  display: inline-block;
+  border-radius: 20px;
+  height: 300px;
+  margin: 5px;
+}
+
+.sign-up-form {
+  height: 100%;
+  background: linear-gradient(#0ca091, #01463f);
+}
+
+@keyframes moveUp {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-800px);
+  }
+}
