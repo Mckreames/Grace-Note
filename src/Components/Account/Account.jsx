@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import {
+  Nav,
+  NavItem,
+  Dropdown,
+  DropdownItem,
+  DropdownToggle,
+  DropdownMenu,
+  NavLink,
+} from "reactstrap";
 import "./Account.css";
 import ProfilePic from "./Imgs/ProfilePic.jpg";
 import BannerPic from "./Imgs/BannerPic.jpg";
 
 export default function Account() {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggle = () => setDropdownOpen(!dropdownOpen);
+
   return (
     <div className="col">
       <section className="col-2 pt-3 side-piece">
@@ -36,15 +49,42 @@ export default function Account() {
           </div>
         </div>
         <div className="mt-5 pt-3 categories">
+          <Nav tabs>
+            <NavItem>
+              <NavLink href="#" active>
+                Link
+              </NavLink>
+            </NavItem>
+            <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
+              <DropdownToggle nav caret>
+                Dropdown
+              </DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem header>Header</DropdownItem>
+                <DropdownItem disabled>Action</DropdownItem>
+                <DropdownItem>Another Action</DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>Another Action</DropdownItem>
+              </DropdownMenu>
+            </Dropdown>
+            <NavItem>
+              <NavLink href="#">Link</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#">Another Link</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink disabled href="#">
+                Disabled Link
+              </NavLink>
+            </NavItem>
+          </Nav>
           <h3 className="offset-3 text-start">New Releases</h3>
           <div className="offset-2 col-7 mb-5 hor-scroll"></div>
-
           <h3 className="offset-3 text-start">Most Popular</h3>
           <div className="offset-2 col-7 mb-5 hor-scroll"></div>
-
           <h3 className="offset-3 text-start">Your Recents</h3>
           <div className="offset-2 col-7 mb-5 hor-scroll"></div>
-
           <h3 className="offset-3 text-start">Upcoming Events Near You</h3>
           <div className="offset-2 col-7 mb-5 hor-scroll"></div>
         </div>

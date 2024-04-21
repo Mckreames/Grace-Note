@@ -22,54 +22,54 @@ export default function SignUp() {
   return (
     <div className="offset-1 row col-10 sign-up-sheet">
       <div className=" col-6 sign-up-layer">
-        <img className="sign-up-img" src={redhead}></img>
-        <img className="sign-up-img" src={Acoustic}></img>
-        <img className="sign-up-img" src={BigBoom}></img>
-        <img className="sign-up-img" src={BluePic}></img>
-        <img className="sign-up-img" src={ClearBall}></img>
-        <img className="sign-up-img" src={EthnicWorship}></img>
-        <img className="sign-up-img" src={Midi}></img>
-        <img className="sign-up-img" src={HandsLifted}></img>
-        <img className="sign-up-img" src={StageDrums}></img>
-        <img className="sign-up-img" src={StageGuitar}></img>
-        <img className="sign-up-img" src={BluePiano}></img>
-        <img className="sign-up-img" src={WhiteCassette}></img>
-        <img className="sign-up-img" src={Vinyl}></img>
-        <img className="sign-up-img" src={StageHat}></img>
-        <img className="sign-up-img" src={TheMustache}></img>
-        <img className="sign-up-img" src={TwoGirls}></img>
-        <img className="sign-up-img" src={redhead}></img>
-        <img className="sign-up-img" src={Acoustic}></img>
-        <img className="sign-up-img" src={BigBoom}></img>
-        <img className="sign-up-img" src={BluePic}></img>
-        <img className="sign-up-img" src={ClearBall}></img>
-        <img className="sign-up-img" src={EthnicWorship}></img>
-        <img className="sign-up-img" src={Midi}></img>
-        <img className="sign-up-img" src={HandsLifted}></img>
-        <img className="sign-up-img" src={StageDrums}></img>
-        <img className="sign-up-img" src={StageGuitar}></img>
-        <img className="sign-up-img" src={BluePiano}></img>
-        <img className="sign-up-img" src={WhiteCassette}></img>
-        <img className="sign-up-img" src={Vinyl}></img>
-        <img className="sign-up-img" src={StageHat}></img>
-        <img className="sign-up-img" src={TheMustache}></img>
-        <img className="sign-up-img" src={TwoGirls}></img>
-        <img className="sign-up-img" src={redhead}></img>
-        <img className="sign-up-img" src={Acoustic}></img>
-        <img className="sign-up-img" src={BigBoom}></img>
-        <img className="sign-up-img" src={BluePic}></img>
-        <img className="sign-up-img" src={ClearBall}></img>
-        <img className="sign-up-img" src={EthnicWorship}></img>
-        <img className="sign-up-img" src={Midi}></img>
-        <img className="sign-up-img" src={HandsLifted}></img>
-        <img className="sign-up-img" src={StageDrums}></img>
-        <img className="sign-up-img" src={StageGuitar}></img>
-        <img className="sign-up-img" src={BluePiano}></img>
-        <img className="sign-up-img" src={WhiteCassette}></img>
-        <img className="sign-up-img" src={Vinyl}></img>
-        <img className="sign-up-img" src={StageHat}></img>
-        <img className="sign-up-img" src={TheMustache}></img>
-        <img className="sign-up-img" src={TwoGirls}></img>
+        <img className="fade1 sign-up-img" src={redhead}></img>
+        <img className="fade2 sign-up-img" src={Acoustic}></img>
+        <img className="fadde3 sign-up-img" src={BigBoom}></img>
+        <img className="fade4 sign-up-img" src={BluePic}></img>
+        <img className="fade5 sign-up-img" src={ClearBall}></img>
+        <img className="fade6 sign-up-img" src={EthnicWorship}></img>
+        <img className="fade7 sign-up-img" src={Midi}></img>
+        <img className="fade8 sign-up-img" src={HandsLifted}></img>
+        <img className="fade8 sign-up-img" src={StageDrums}></img>
+        <img className="fade8 sign-up-img" src={StageGuitar}></img>
+        <img className="fade8 sign-up-img" src={BluePiano}></img>
+        <img className="fade8 sign-up-img" src={WhiteCassette}></img>
+        <img className="fade8 sign-up-img" src={Vinyl}></img>
+        <img className="fade8 sign-up-img" src={StageHat}></img>
+        <img className="fade8 sign-up-img" src={TheMustache}></img>
+        <img className="fade8 sign-up-img" src={TwoGirls}></img>
+        <img className="fade8 sign-up-img" src={redhead}></img>
+        <img className="fade8 sign-up-img" src={Acoustic}></img>
+        <img className="fade8 sign-up-img" src={BigBoom}></img>
+        <img className="fade8 sign-up-img" src={BluePic}></img>
+        <img className="fade8 sign-up-img" src={ClearBall}></img>
+        <img className="fade8 sign-up-img" src={EthnicWorship}></img>
+        <img className="fade8 sign-up-img" src={Midi}></img>
+        <img className="fade8 sign-up-img" src={HandsLifted}></img>
+        <img className="fade8 sign-up-img" src={StageDrums}></img>
+        <img className="fade8 sign-up-img" src={StageGuitar}></img>
+        <img className="fade8 sign-up-img" src={BluePiano}></img>
+        <img className="fade8 sign-up-img" src={WhiteCassette}></img>
+        <img className="fade8 sign-up-img" src={Vinyl}></img>
+        <img className="fade8 sign-up-img" src={StageHat}></img>
+        <img className="fade8 sign-up-img" src={TheMustache}></img>
+        <img className="fade8 sign-up-img" src={TwoGirls}></img>
+        <img className="fade8 sign-up-img" src={redhead}></img>
+        <img className="fade8 sign-up-img" src={Acoustic}></img>
+        <img className="fade8 sign-up-img" src={BigBoom}></img>
+        <img className="fade8 sign-up-img" src={BluePic}></img>
+        <img className="fade8 sign-up-img" src={ClearBall}></img>
+        <img className="fade8 sign-up-img" src={EthnicWorship}></img>
+        <img className="fade8 sign-up-img" src={Midi}></img>
+        <img className="fade8 sign-up-img" src={HandsLifted}></img>
+        <img className="fade8 sign-up-img" src={StageDrums}></img>
+        <img className="fade8 sign-up-img" src={StageGuitar}></img>
+        <img className="fade8 sign-up-img" src={BluePiano}></img>
+        <img className="fade8 sign-up-img" src={WhiteCassette}></img>
+        <img className="fade8 sign-up-img" src={Vinyl}></img>
+        <img className="fade8 sign-up-img" src={StageHat}></img>
+        <img className="fade8 sign-up-img" src={TheMustache}></img>
+        <img className="fade8 sign-up-img" src={TwoGirls}></img>
       </div>
       <div className="col-6 pt-5 sign-up-form">
         <h1 className="mt-5 pt-5 color-light-grey">Welcome Back!</h1>
