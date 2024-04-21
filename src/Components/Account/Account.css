@@ -1,0 +1,36 @@
+.side-piece {
+  height: 100vh;
+  float: left;
+  background: var(--dark-grey);
+}
+
+.your-playlist,
+.friends-playlist {
+  background-color: var(--light-grey);
+}
+
+.banner-sect {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  object-fit: cover;
+}
+
+.banner-img {
+  object-fit: cover;
+  height: 229px;
+}
+
+.profile-img {
+  border: 6px solid var(--grey);
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 2%;
+  width: 200px;
+  z-index: 999;
+}
+
+.user-info {
+  margin-top: -90px;
+}

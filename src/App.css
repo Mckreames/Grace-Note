@@ -128,3 +128,11 @@ ul {
 .color-light-grey {
   color: var(--light-grey) !important;
 }
+
+.color-white {
+  color: white !important;
+}
+
+.color-electric {
+  color: var(--electric-blue) !important;
+}
