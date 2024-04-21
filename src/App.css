@@ -124,3 +124,7 @@ ul {
 .quar-btn:hover {
   background: linear-gradient(var(--electric-blue), var(--dark-grey));
 }
+
+.color-light-grey {
+  color: var(--light-grey) !important;
+}

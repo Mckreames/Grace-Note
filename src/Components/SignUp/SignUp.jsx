@@ -13,6 +13,10 @@ import StageGuitar from "./Imgs/StageGuitar.jpg";
 import StageHat from "./Imgs/StageHat.jpg";
 import Vinyl from "./Imgs/Vinyl.jpg";
 import WhiteCassette from "./Imgs/WhiteCasset.jpg";
+import BluePiano from "./Imgs/BluePiano.jpg";
+import HandsLifted from "./Imgs/HandsLifted.jpg";
+import TheMustache from "./Imgs/TheMustache.jpg";
+import TwoGirls from "./Imgs/TwoGirls.jpg";
 
 export default function SignUp() {
   return (
@@ -25,25 +29,61 @@ export default function SignUp() {
         <img className="sign-up-img" src={ClearBall}></img>
         <img className="sign-up-img" src={EthnicWorship}></img>
         <img className="sign-up-img" src={Midi}></img>
+        <img className="sign-up-img" src={HandsLifted}></img>
         <img className="sign-up-img" src={StageDrums}></img>
         <img className="sign-up-img" src={StageGuitar}></img>
-        <img className="sign-up-img" src={StageHat}></img>
-        <img className="sign-up-img" src={Vinyl}></img>
+        <img className="sign-up-img" src={BluePiano}></img>
         <img className="sign-up-img" src={WhiteCassette}></img>
+        <img className="sign-up-img" src={Vinyl}></img>
+        <img className="sign-up-img" src={StageHat}></img>
+        <img className="sign-up-img" src={TheMustache}></img>
+        <img className="sign-up-img" src={TwoGirls}></img>
+        <img className="sign-up-img" src={redhead}></img>
+        <img className="sign-up-img" src={Acoustic}></img>
+        <img className="sign-up-img" src={BigBoom}></img>
+        <img className="sign-up-img" src={BluePic}></img>
+        <img className="sign-up-img" src={ClearBall}></img>
+        <img className="sign-up-img" src={EthnicWorship}></img>
+        <img className="sign-up-img" src={Midi}></img>
+        <img className="sign-up-img" src={HandsLifted}></img>
+        <img className="sign-up-img" src={StageDrums}></img>
+        <img className="sign-up-img" src={StageGuitar}></img>
+        <img className="sign-up-img" src={BluePiano}></img>
+        <img className="sign-up-img" src={WhiteCassette}></img>
+        <img className="sign-up-img" src={Vinyl}></img>
+        <img className="sign-up-img" src={StageHat}></img>
+        <img className="sign-up-img" src={TheMustache}></img>
+        <img className="sign-up-img" src={TwoGirls}></img>
+        <img className="sign-up-img" src={redhead}></img>
+        <img className="sign-up-img" src={Acoustic}></img>
+        <img className="sign-up-img" src={BigBoom}></img>
+        <img className="sign-up-img" src={BluePic}></img>
+        <img className="sign-up-img" src={ClearBall}></img>
+        <img className="sign-up-img" src={EthnicWorship}></img>
+        <img className="sign-up-img" src={Midi}></img>
+        <img className="sign-up-img" src={HandsLifted}></img>
+        <img className="sign-up-img" src={StageDrums}></img>
+        <img className="sign-up-img" src={StageGuitar}></img>
+        <img className="sign-up-img" src={BluePiano}></img>
+        <img className="sign-up-img" src={WhiteCassette}></img>
+        <img className="sign-up-img" src={Vinyl}></img>
+        <img className="sign-up-img" src={StageHat}></img>
+        <img className="sign-up-img" src={TheMustache}></img>
+        <img className="sign-up-img" src={TwoGirls}></img>
       </div>
       <div className="col-6 pt-5 sign-up-form">
-        <h1 className="mt-5">Welcome Back!</h1>
+        <h1 className="mt-5 pt-5 color-light-grey">Welcome Back!</h1>
         <h2 className="pb-4 ">
           All of your
-          <span className="fancy-text sign-up-fancy">favorites</span> are
+          <span className="fancy-text sign-up-fancy"> favorites</span> are
           waiting for you
         </h2>
         <p className="offset-2 col-8 mb-5">
-          Entering your email will NOT automatically sign you up for the
-          newsletter. If you'd like to recieve the newsletter, head to our
-          homepage and let us keep you informed
+          Enter your Username and Email below to unlock access to our entire
+          library of songs, links, and charts. The best part about it is that
+          it's 100% FREE! No Cards, No Tiers, No Worries.
         </p>
-        <Form className="offset-2 col-8 mt-5 pt-5">
+        <Form className="offset-2 col-8 pt-3">
           <Row className="row-cols-lg-auto g-3 align-items-center">
             <Col>
               <Label className="visually-hidden" for="exampleEmail">
@@ -67,16 +107,19 @@ export default function SignUp() {
                 type="password"
               />
             </Col>
-            {/* <Col>
+            <Col>
               <FormGroup check>
                 <Input id="exampleCheckbox" name="checkbox" type="checkbox" />
                 <Label check for="exampleCheckbox">
                   Remember Me
                 </Label>
               </FormGroup>
-            </Col> */}
+            </Col>
             <Col>
-              <Button>Submit</Button>
+              <Button>Sign In</Button>
+            </Col>
+            <Col>
+              <Button>Sign Up</Button>
             </Col>
           </Row>
         </Form>

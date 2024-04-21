@@ -6,7 +6,7 @@
 }
 
 .sign-up-layer {
-  animation: moveUp 60s ease-in-out infinite;
+  animation: moveUp 240s ease-in-out infinite;
 }
 
 .sign-up-img {
@@ -27,6 +27,6 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-800px);
+    transform: translateY(-5200px);
   }
 }
