@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Grace-Note/static/css/main.7974c6e8.css",
-    "main.js": "/Grace-Note/static/js/main.50667aac.js",
+    "main.css": "/Grace-Note/static/css/main.76ebf2af.css",
+    "main.js": "/Grace-Note/static/js/main.88464a7d.js",
     "static/media/Acoustics.jpg": "/Grace-Note/static/media/Acoustics.15d6e65954bebc6441c1.jpg",
     "static/media/threeGuitars.jpg": "/Grace-Note/static/media/threeGuitars.119a44c8b4f0cf77db2e.jpg",
     "static/media/WhiteCasset.jpg": "/Grace-Note/static/media/WhiteCasset.1d55423f277ba4fb5335.jpg",
@@ -18,7 +18,9 @@
     "static/media/Midi.jpg": "/Grace-Note/static/media/Midi.70daa6bc04209cee1642.jpg",
     "static/media/StageHat.jpg": "/Grace-Note/static/media/StageHat.4e36c814434e362d6625.jpg",
     "static/media/guitarLean.jpg": "/Grace-Note/static/media/guitarLean.5c0c1aa9610831bdc676.jpg",
+    "static/media/BannerPic.jpg": "/Grace-Note/static/media/BannerPic.7fb3eee2e0ffc2730d71.jpg",
     "static/media/wrestleMic.jpg": "/Grace-Note/static/media/wrestleMic.281709be0b7c55751e23.jpg",
+    "static/media/ProfilePic.jpg": "/Grace-Note/static/media/ProfilePic.dec225ed0b182b8af7c6.jpg",
     "static/media/BlackBun.jpg": "/Grace-Note/static/media/BlackBun.f46460c8b978338048d1.jpg",
     "static/media/TheMustache.jpg": "/Grace-Note/static/media/TheMustache.ca117a70e45466bd6f20.jpg",
     "static/media/StageDrums.jpg": "/Grace-Note/static/media/StageDrums.a2396a35db45169b4abc.jpg",
@@ -31,11 +33,11 @@
     "static/media/NameAndSloganOnly.png": "/Grace-Note/static/media/NameAndSloganOnly.dd751ecd5a43e7c6678a.png",
     "static/media/LogoOnly.png": "/Grace-Note/static/media/LogoOnly.00c3de19fa2fb94f8ea8.png",
     "index.html": "/Grace-Note/index.html",
-    "main.7974c6e8.css.map": "/Grace-Note/static/css/main.7974c6e8.css.map",
-    "main.50667aac.js.map": "/Grace-Note/static/js/main.50667aac.js.map"
+    "main.76ebf2af.css.map": "/Grace-Note/static/css/main.76ebf2af.css.map",
+    "main.88464a7d.js.map": "/Grace-Note/static/js/main.88464a7d.js.map"
   },
   "entrypoints": [
-    "static/css/main.7974c6e8.css",
-    "static/js/main.50667aac.js"
+    "static/css/main.76ebf2af.css",
+    "static/js/main.88464a7d.js"
   ]
 }
