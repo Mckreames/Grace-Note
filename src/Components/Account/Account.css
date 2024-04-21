@@ -5,7 +5,8 @@
 }
 
 .your-playlist,
-.friends-playlist {
+.friends-playlist,
+.favorites-text {
   background-color: var(--light-grey);
 }
 
@@ -19,6 +20,7 @@
 .banner-img {
   object-fit: cover;
   height: 229px;
+  box-shadow: 1px 1px 10px var(--electric-blue);
 }
 
 .profile-img {
@@ -28,9 +30,20 @@
   top: 25%;
   left: 2%;
   width: 200px;
-  z-index: 999;
+  box-shadow: 0px 5px 10px var(--electric-blue);
 }
 
 .user-info {
   margin-top: -90px;
+}
+
+.favorites-sect {
+  float: right;
+  background-color: var(--dark-grey);
+  height: 1100px;
+}
+
+.hor-scroll {
+  height: 200px;
+  background-color: var(--light-grey);
 }

@@ -26,6 +26,29 @@ export default function Account() {
           <h6 className="color-white">Pianist at Union Church</h6>
         </div>
       </section>
+      <section>
+        <div className="col-3 pt-4 favorites-sect">
+          <div>
+            <h3 className="color-electric">Favorites</h3>
+            <p className="offset-1 col-10 favorites-text">
+              You have no favorites yet
+            </p>
+          </div>
+        </div>
+        <div className="mt-5 pt-3 categories">
+          <h3 className="offset-3 text-start">New Releases</h3>
+          <div className="offset-2 col-7 mb-5 hor-scroll"></div>
+
+          <h3 className="offset-3 text-start">Most Popular</h3>
+          <div className="offset-2 col-7 mb-5 hor-scroll"></div>
+
+          <h3 className="offset-3 text-start">Your Recents</h3>
+          <div className="offset-2 col-7 mb-5 hor-scroll"></div>
+
+          <h3 className="offset-3 text-start">Upcoming Events Near You</h3>
+          <div className="offset-2 col-7 mb-5 hor-scroll"></div>
+        </div>
+      </section>
     </div>
   );
 }
