@@ -24,7 +24,7 @@ export default function SignUp() {
       <div className=" col-6 sign-up-layer">
         <img className="fade1 sign-up-img" src={redhead}></img>
         <img className="fade2 sign-up-img" src={Acoustic}></img>
-        <img className="fadde3 sign-up-img" src={BigBoom}></img>
+        <img className="fade3 sign-up-img" src={BigBoom}></img>
         <img className="fade4 sign-up-img" src={BluePic}></img>
         <img className="fade5 sign-up-img" src={ClearBall}></img>
         <img className="fade6 sign-up-img" src={EthnicWorship}></img>
