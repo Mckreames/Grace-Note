@@ -6,6 +6,10 @@
   --light-grey: #29292c;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
   /* background: url("./Imgs/Blue_Corner_Blob.png") no-repeat; */

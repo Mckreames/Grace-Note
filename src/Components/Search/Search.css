@@ -1,0 +1,35 @@
+.search-area {
+  background-color: var(--dark-grey);
+}
+
+.search-page-search {
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  color: white;
+  background-color: var(--light-grey);
+}
+
+.search-result {
+  background-color: var(--grey);
+  box-shadow: 0px 9px 10px var(--electric-blue);
+  min-height: 100vh;
+}
+
+.li-result {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+  list-style: none;
+  max-width: 250px;
+  background-color: var(--light-grey);
+}
+
+.li-result:hover {
+  border-radius: 20px;
+  box-shadow: 0 0 10px var(--electric-blue);
+  cursor: pointer;
+}
+
+.li-img {
+  max-width: 200px;
+}

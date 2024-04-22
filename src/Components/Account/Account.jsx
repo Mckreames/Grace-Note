@@ -24,7 +24,7 @@ export default function Account() {
         <div className="your-playlist">
           <p>You have no playlists yet</p>
         </div>
-        <h5 className="color-electric">Your Friends' Playlists</h5>
+        <h5 className="color-electric">Playlists You Follow</h5>
         <div className="friends-playlist">
           <p>You have no friends yet</p>
         </div>
@@ -49,35 +49,35 @@ export default function Account() {
           </div>
         </div>
         <div className="mt-5 pt-3 categories">
-          <Nav tabs>
+          <Nav tabs className="mb-3 pb-1">
             <NavItem>
               <NavLink href="#" active>
-                Link
+                Music
               </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#">Social</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#">News</NavLink>
             </NavItem>
             <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
               <DropdownToggle nav caret>
-                Dropdown
+                Settings
               </DropdownToggle>
               <DropdownMenu>
-                <DropdownItem header>Header</DropdownItem>
-                <DropdownItem disabled>Action</DropdownItem>
-                <DropdownItem>Another Action</DropdownItem>
+                <DropdownItem header>Account Settings</DropdownItem>
+                <DropdownItem>Edit Profile Picture</DropdownItem>
+                <DropdownItem>Edit Profile Banner</DropdownItem>
+                <DropdownItem>Update Title</DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem>Another Action</DropdownItem>
+                <DropdownItem header>User Settings</DropdownItem>
+                <DropdownItem>Light/ Dark Mode</DropdownItem>
+                <DropdownItem>Update Email</DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>Log Out</DropdownItem>
               </DropdownMenu>
             </Dropdown>
-            <NavItem>
-              <NavLink href="#">Link</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#">Another Link</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink disabled href="#">
-                Disabled Link
-              </NavLink>
-            </NavItem>
           </Nav>
           <h3 className="offset-3 text-start">New Releases</h3>
           <div className="offset-2 col-7 mb-5 hor-scroll"></div>

@@ -1,39 +1,37 @@
 .nav-sect {
-    height: 120px;
-    /* color: white !important; */
-    background-color: var(--grey);
-    box-shadow: 1px 1px 10px var(--electric-blue);
+  height: 120px;
+
+  background-color: var(--grey);
+  box-shadow: 1px 1px 10px var(--electric-blue);
 }
 
 .nav-brand {
-    padding: 0.5rem;
-    color: var(--electric-blue) !important;
-    font-size: 30px;
-    /* border: 3px double var(--goldenrod); */
-    border-radius: 10px;
+  padding: 0.5rem;
+  color: var(--electric-blue) !important;
+  font-size: 30px;
+  border-radius: 10px;
 }
 
 .app-logo {
-    width: 90px;
+  width: 90px;
 }
 
 .navbar-toggler {
-    color: var(--electric-blue) !important;
+  color: var(--electric-blue) !important;
 }
 
 .navbar-toggler-icon {
-    color: var(--electric-blue) !important;
+  color: var(--electric-blue) !important;
 }
 
 .nav-link {
-    color: var(--goldenrod);
-    font-size: 25px;
-    font-weight: lighter;
-    background-color: var(--grey);
-    border-radius: 0 0 10px 10px;
+  color: var(--goldenrod);
+  font-size: 25px;
+  font-weight: lighter;
+  background-color: var(--grey);
+  border-radius: 0 0 10px 10px;
 }
 
-
 .nav-link:hover {
-    color: var(--electric-blue);
+  color: var(--electric-blue);
 }

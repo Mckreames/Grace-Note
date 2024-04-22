@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import GraceNoteNav from "./Components/GraceNoteNav/GraceNoteNav";
 import Home from "./Components/Home/Home";
 import Account from "./Components/Account/Account";
+import SongSearch from "./Components/SongSearch/SongSearch";
 import SongAddForm from "./Components/SongAddForm/SongAddForm";
 import NotFound from "./Components/NotFound/NotFound";
 import About from "./Components/About/About";
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/account" element={<Account />}></Route>
+          <Route path="/song-search" element={<SongSearch />}></Route>
           <Route path="/song-add" element={<SongAddForm />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/sign-up" element={<SignUp />}></Route>
