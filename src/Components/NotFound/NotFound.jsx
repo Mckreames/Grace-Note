@@ -1,22 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./NotFound.css";
 import { Link } from "react-router-dom";
 
 export default function NotFound() {
-  const animateBubble = (x) => {
-    const wrapper = document.getElementById("bubble-wrapper");
-    const bubble = document.createElement("div");
+  useEffect(() => {
+    const animateBubble = (x) => {
+      const wrapper = document.getElementById("bubble-wrapper");
+      const bubble = document.createElement("div");
 
-    bubble.className = "bubble";
+      bubble.className = "bubble";
 
-    bubble.style.left = `${x}px`;
+      bubble.style.left = `${x}px`;
 
-    wrapper.appendChild(bubble);
+      wrapper.appendChild(bubble);
 
-    setTimeout(() => wrapper.removeChild(bubble), 2000);
-  };
+      setTimeout(() => wrapper.removeChild(bubble), 2000);
+    };
 
-  window.onmousemove = (e) => animateBubble(e.clientX);
+    const handleMouseMove = (e) => animateBubble(e.clientX);
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+      // window.onmousemove = (e) => animateBubble(e.clientX);
+    };
+  }, []);
 
   return (
     <div className="sheet1">
