@@ -147,8 +147,8 @@ export default function SongAddForm({ id }) {
         />
         <button type="submit">Add</button>
       </form>
-      <section className="offset-1 col-10 added-songs">
-        <div className="text-left">{ItemsJsx}</div>
+      <section className="offset-1 col-10 added-songs-list">
+        <div className="added-songs">{ItemsJsx}</div>
       </section>
       {/* <div>
         <li>
