@@ -29,8 +29,8 @@ export default function Search() {
 
   return (
     <div>
-      <section className="offset-1 col-10 pt-4 pb-4 search-area">
-        <h2 className="color-electric">
+      <section className="offset-1 col-10 pt-5 pb-5 search-area">
+        <h2 className="pb-4 color-electric">
           Come Find Exactly What You're Looking For!
         </h2>
         <form onSubmit={handleSubmit}>
