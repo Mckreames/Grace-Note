@@ -1,5 +1,7 @@
 .search-area {
   background-color: var(--dark-grey);
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 0 10px var(--electric-blue);
 }
 
 .search-page-search {
@@ -11,8 +13,8 @@
 }
 
 .search-result {
-  background-color: var(--grey);
-  box-shadow: 0px 9px 10px var(--electric-blue);
+  background-color: black;
+  box-shadow: 0px 4px 8px var(--electric-blue);
   min-height: 100vh;
 }
 

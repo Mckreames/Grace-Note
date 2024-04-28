@@ -34,7 +34,7 @@ export default function Search() {
 
   return (
     <div>
-      <section className="offset-1 col-10 pt-5 pb-5 search-area">
+      <section className="offset-1 col-10 mt-5 pt-5 pb-5 search-area">
         <h2 className="pb-4 color-electric">
           Come Find Exactly What You're Looking For!
         </h2>
@@ -45,14 +45,14 @@ export default function Search() {
             id="search"
             name="search"
             className="col-2 me-4 search-page-search"
-            placeholder="Enter Song Here"
+            placeholder="🔍   Enter Song Here"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           ></input>
           <button type="submit">Search</button>
         </form>
       </section>
-      <section className="offset-1 col-10 pt-4 search-result">
+      <section className="offset-1 col-10 mb-5 pt-4 search-result">
         <div>
           {searchResult && (
             <ul className="col-12 flex-wrap d-flex justify-content-evenly">
