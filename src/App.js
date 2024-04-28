@@ -6,6 +6,7 @@ import GraceNoteNav from "./Components/GraceNoteNav/GraceNoteNav";
 import Home from "./Components/Home/Home";
 import Account from "./Components/Account/Account";
 import SongSearch from "./Components/SongSearch/SongSearch";
+import Randomizer from "./Components/Randomizer/Randomizer";
 import SongAddForm from "./Components/SongAddForm/SongAddForm";
 import NotFound from "./Components/NotFound/NotFound";
 import About from "./Components/About/About";
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/account" element={<Account />}></Route>
           <Route path="/song-search" element={<SongSearch />}></Route>
+          <Route path="/randomizer" element={<Randomizer />}></Route>
           <Route path="/song-add" element={<SongAddForm />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/sign-up" element={<SignUp />}></Route>

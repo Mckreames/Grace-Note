@@ -54,7 +54,15 @@ export default function GraceNoteNav() {
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>Your Song List</DropdownItem>
-                <DropdownItem>Song Selector</DropdownItem>
+                <DropdownItem>
+                  <Link
+                    to="/Randomizer"
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                    Song Randomizer
+                  </Link>
+                </DropdownItem>
+
                 <DropdownItem divider />
                 <DropdownItem>
                   <Link
