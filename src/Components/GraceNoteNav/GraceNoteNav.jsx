@@ -56,7 +56,14 @@ export default function GraceNoteNav() {
                 <DropdownItem>Your Song List</DropdownItem>
                 <DropdownItem>Song Selector</DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem>Manage Your Songs</DropdownItem>
+                <DropdownItem>
+                  <Link
+                    to="/song-add"
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                    Manage Your Songs
+                  </Link>
+                </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>

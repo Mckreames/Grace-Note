@@ -17,12 +17,12 @@ function SongItem({ id, name, artist, songKey, bpm, deleteItem }) {
         <h6 className="info-value">{artist}</h6>
       </div>
       <div className="col-1 song-info">
-        <span className="info-label">| Key: </span>
-        <span className="info-value">{songKey} |</span>
+        <span className="info-label">Key: </span>
+        <h6 className="info-value">{songKey}</h6>
       </div>
       <div className="col-1 song-info">
-        <span className="info-label">| BPM: </span>
-        <span className="info-value">{bpm} |</span>
+        <span className="info-label">BPM: </span>
+        <h6 className="info-value">{bpm}</h6>
       </div>
       <button
         onClick={() => deleteItem(id)}
@@ -114,80 +114,82 @@ export default function SongAddForm({ id }) {
   }
 
   return (
-    <div className="offset-1 col-10">
-      <header className="App-header">
-        <h1 className="pt-4"> Manage List </h1>
-        <h4 className="offset-4 col-4 pt-2 pb-2 save-your-favorites">
-          Add the songs you can't find now or delete the songs you don't want
-        </h4>
-      </header>
-      <div className="manage-sheet">
-        <form
-          action="#"
-          method="POST"
-          onSubmit={handleSubmit}
-          className="pt-5 pb-5 col form"
-        >
-          <label htmlFor="name">Song</label>
-          <input
-            className="col-2 input"
-            type="text"
-            required
-            id="name"
-            name="name"
-            value={name}
-            maxLength={255}
-            onChange={handleNameChange}
-          />
-          <label htmlFor="artist">Artist</label>
-          <input
-            className="col-2 input"
-            type="text"
-            required
-            id="artist"
-            name="artist"
-            value={artist}
-            maxLength={70}
-            onChange={handleArtistChange}
-          />
-          <label htmlFor="songKey">Key</label>
-          <input
-            className="col-1 input"
-            type="text"
-            required
-            id="songKey"
-            name="songKey"
-            value={songKey}
-            maxLength={3}
-            onChange={handleSongKeyChange}
-          />
-          <label htmlFor="bpm">BPM</label>
-          <input
-            className="col-1 input"
-            type="number"
-            id="bpm"
-            name="bpm"
-            value={bpm}
-            required
-            min="40"
-            max="300"
-            onChange={handleBPMChange}
-          />
-          <button type="submit">Add</button>
-        </form>
-        <section className="mb-5 added-songs-list">
-          {songItem.map((item) => (
-            <SongItem
-              key={item.id}
-              id={item.id}
-              name={item.name}
-              artist={item.artist}
-              songKey={item.songKey}
-              bpm={item.bpm}
-              deleteItem={() => handleDelete(item.id)}
+    <div className="col-12 background">
+      <div className="offset-1 col-10">
+        <header className="App-header">
+          <h1 className="pt-4"> Manage List </h1>
+          <h4 className="offset-4 col-4 pt-2 pb-2 save-your-favorites">
+            Add the songs you can't find now or delete the songs you don't want
+          </h4>
+        </header>
+        <div className="manage-sheet">
+          <form
+            action="#"
+            method="POST"
+            onSubmit={handleSubmit}
+            className="pt-5 pb-5 col form"
+          >
+            <label htmlFor="name">Song</label>
+            <input
+              className="col-2 input"
+              type="text"
+              required
+              id="name"
+              name="name"
+              value={name}
+              maxLength={255}
+              onChange={handleNameChange}
             />
-          ))}
-        </section>
+            <label htmlFor="artist">Artist</label>
+            <input
+              className="col-2 input"
+              type="text"
+              required
+              id="artist"
+              name="artist"
+              value={artist}
+              maxLength={70}
+              onChange={handleArtistChange}
+            />
+            <label htmlFor="songKey">Key</label>
+            <input
+              className="col-1 input"
+              type="text"
+              required
+              id="songKey"
+              name="songKey"
+              value={songKey}
+              maxLength={3}
+              onChange={handleSongKeyChange}
+            />
+            <label htmlFor="bpm">BPM</label>
+            <input
+              className="col-1 input"
+              type="number"
+              id="bpm"
+              name="bpm"
+              value={bpm}
+              required
+              min="40"
+              max="300"
+              onChange={handleBPMChange}
+            />
+            <button type="submit">Add</button>
+          </form>
+          <section className="mb-5 added-songs-list">
+            {songItem.map((item) => (
+              <SongItem
+                key={item.id}
+                id={item.id}
+                name={item.name}
+                artist={item.artist}
+                songKey={item.songKey}
+                bpm={item.bpm}
+                deleteItem={() => handleDelete(item.id)}
+              />
+            ))}
+          </section>
+        </div>
       </div>
     </div>
   );

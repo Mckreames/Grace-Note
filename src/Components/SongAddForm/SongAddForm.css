@@ -1,3 +1,9 @@
+.background {
+  background-image: url("Imgs/Blue_Corner_Blob.png");
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+
 .manage-sheet {
   box-shadow: 0 0 10px black;
   border-radius: 20px;
@@ -35,6 +41,7 @@ button:hover {
 
 .added-songs-list {
   background: var(--dark-grey);
+  min-height: 750px;
   /* background: linear-gradient(147deg, #ccffff 5%, #ffefc3 90%); */
   border-radius: 0 0 20px 20px;
 }
