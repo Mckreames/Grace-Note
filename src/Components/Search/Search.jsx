@@ -6,24 +6,29 @@ export default function Search() {
   const [searchResult, setSearchResult] = useState(null);
 
   const handleSubmit = async (event) => {
-    event.preventDefault();
-    const searchTerm = event.target.elements.search.value;
+    if (event === undefined) {
+      return;
+    } else {
+      event.preventDefault();
+      const searchTerm = event.target.elements.search.value;
 
-    const url = `https://deezerdevs-deezer.p.rapidapi.com/search?q=${searchTerm}`;
-    const options = {
-      method: "GET",
-      headers: {
-        "X-RapidAPI-Key": "fa40ea65a6msha68e6f5343e548dp10595ajsn6d26736be691",
-        "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
-      },
-    };
+      const url = `https://deezerdevs-deezer.p.rapidapi.com/search?q=${searchTerm}`;
+      const options = {
+        method: "GET",
+        headers: {
+          "X-RapidAPI-Key":
+            "fa40ea65a6msha68e6f5343e548dp10595ajsn6d26736be691",
+          "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
+        },
+      };
 
-    try {
-      const response = await fetch(url, options);
-      const result = await response.json();
-      setSearchResult(result); // Set the searchResult state with the fetched data
-    } catch (error) {
-      console.error(error);
+      try {
+        const response = await fetch(url, options);
+        const result = await response.json();
+        setSearchResult(result); // Set the searchResult state with the fetched data
+      } catch (error) {
+        console.error(error);
+      }
     }
   };
 
