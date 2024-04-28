@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/Grace-Note/static/css/main.e50e3055.css",
-    "main.js": "/Grace-Note/static/js/main.308178ae.js",
+    "main.css": "/Grace-Note/static/css/main.5bc9ed88.css",
+    "main.js": "/Grace-Note/static/js/main.8a31832f.js",
     "static/media/Acoustics.jpg": "/Grace-Note/static/media/Acoustics.15d6e65954bebc6441c1.jpg",
     "static/media/threeGuitars.jpg": "/Grace-Note/static/media/threeGuitars.119a44c8b4f0cf77db2e.jpg",
     "static/media/WhiteCasset.jpg": "/Grace-Note/static/media/WhiteCasset.1d55423f277ba4fb5335.jpg",
     "static/media/BigBoom.jpg": "/Grace-Note/static/media/BigBoom.4cf7c55a8a200d146667.jpg",
     "static/media/EthnicWorship.jpg": "/Grace-Note/static/media/EthnicWorship.85e8e8bdcf055856cc0c.jpg",
     "static/media/bubblyGum.jpg": "/Grace-Note/static/media/bubblyGum.3a05f3333089eec4cb6b.jpg",
+    "static/media/OneHandLifted.jpg": "/Grace-Note/static/media/OneHandLifted.e4ed5465ee53f57c6db1.jpg",
     "static/media/Vinyl.jpg": "/Grace-Note/static/media/Vinyl.113c9ec24ed7d4299a17.jpg",
     "static/media/groupWaveOnStage.jpg": "/Grace-Note/static/media/groupWaveOnStage.75d6e169ad8d775c8307.jpg",
     "static/media/upUp.jpg": "/Grace-Note/static/media/upUp.9efd3f0325d0d2274c42.jpg",
@@ -33,11 +34,11 @@
     "static/media/NameAndSloganOnly.png": "/Grace-Note/static/media/NameAndSloganOnly.dd751ecd5a43e7c6678a.png",
     "static/media/LogoOnly.png": "/Grace-Note/static/media/LogoOnly.00c3de19fa2fb94f8ea8.png",
     "index.html": "/Grace-Note/index.html",
-    "main.e50e3055.css.map": "/Grace-Note/static/css/main.e50e3055.css.map",
-    "main.308178ae.js.map": "/Grace-Note/static/js/main.308178ae.js.map"
+    "main.5bc9ed88.css.map": "/Grace-Note/static/css/main.5bc9ed88.css.map",
+    "main.8a31832f.js.map": "/Grace-Note/static/js/main.8a31832f.js.map"
   },
   "entrypoints": [
-    "static/css/main.e50e3055.css",
-    "static/js/main.308178ae.js"
+    "static/css/main.5bc9ed88.css",
+    "static/js/main.8a31832f.js"
   ]
 }
