@@ -50,7 +50,7 @@ export default function GraceNoteNav() {
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                songs
+                Songs
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>Your Song List</DropdownItem>
