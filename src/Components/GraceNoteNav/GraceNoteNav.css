@@ -13,7 +13,24 @@
 }
 
 .app-logo {
+  border-radius: 50%;
   width: 90px;
+}
+
+.app-logo:hover {
+  box-shadow: 0 0 10px var(--electric-blue);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  from,
+  to {
+    box-shadow: 0 0 1px var(--electric-blue);
+  }
+
+  50% {
+    box-shadow: 0 0 10px var(--electric-blue);
+  }
 }
 
 .navbar-toggler {
