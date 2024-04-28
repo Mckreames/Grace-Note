@@ -147,19 +147,20 @@ export default function SongAddForm({ id }) {
         />
         <button type="submit">Add</button>
       </form>
-      <section className="offset-1 col-10 added-songs">
+      {/* <section className="offset-1 col-10 added-songs">
         <div className="text-left">{ItemsJsx}</div>
-      </section>
-      {/* <div>
-        <li>
-          <span>
-            {name} {artist} {songKey} ({bpm})
-          </span>
+      </section> */}
+      <section className="offset-1 col-10 added-songs">
+        <li className>
+          <span>{name}</span>
+          <span>{artist}</span>
+          <span>{songKey}</span>
+          <span>{bpm}</span>
           <button onClick={handleDelete} className="float-end">
             Delete
           </button>
         </li>
-      </div> */}
+      </section>
     </div>
   );
 }
