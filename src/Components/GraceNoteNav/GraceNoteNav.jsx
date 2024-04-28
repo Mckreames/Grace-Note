@@ -53,10 +53,10 @@ export default function GraceNoteNav() {
                 songs
               </DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem>Search Song</DropdownItem>
-                <DropdownItem>Song Lists</DropdownItem>
-                <DropdownItem divider />
+                <DropdownItem>Your Song List</DropdownItem>
                 <DropdownItem>Song Selector</DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>Manage Your Songs</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>

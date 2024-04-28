@@ -1,3 +1,8 @@
+.manage-sheet {
+  box-shadow: 0 0 10px black;
+  border-radius: 20px;
+}
+
 .form {
   background-color: var(--light-grey);
   /* border: 3px solid var(--electric-blue);name, artist, song_key, bpm */
@@ -23,19 +28,47 @@ button:hover {
   /* background-color: rgb(202, 202, 202); */
 }
 
+.delete-btn {
+  margin-right: 0;
+  padding: 0;
+}
+
 .added-songs-list {
-  background: linear-gradient(147deg, #ccffff 5%, #ffefc3 90%);
+  background: var(--dark-grey);
+  /* background: linear-gradient(147deg, #ccffff 5%, #ffefc3 90%); */
   border-radius: 0 0 20px 20px;
 }
 
-.added-songs {
-  color: black;
+.song-item {
+  color: white;
   /* background-color: rgb(221, 221, 221); */
-  line-height: 50px;
+  /* line-height: 30px; */
   text-align: left;
   font-weight: bolder;
   font-size: 18px;
-  margin-left: 1rem;
-  margin-bottom: 2rem;
-  /* border-bottom: 3px solid black; */
+  border-bottom: 3px solid var(--light-grey);
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-radius: 10px;
+}
+
+.song-item:hover {
+  border: 3px solid var(--electric-blue);
+  background: var(--light-grey);
+  cursor: pointer;
+}
+
+.song-info {
+  display: inline-block;
+  overflow-x: hidden;
+  /* width: 300px; */
+}
+
+.song-item .song-info:first-child {
+  width: auto;
+}
+
+.song-item .song-info:last-child {
+  /* Your styles here */
 }
