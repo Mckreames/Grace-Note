@@ -1,6 +1,6 @@
 {
-  "homepage": "https://mckreames.github.io/Grace-Note/",
-  "name": "Grace-Note",
+  "name": "Grace Note",
+  "homepage": "https://mckreames.github.io/Grace-Note",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
