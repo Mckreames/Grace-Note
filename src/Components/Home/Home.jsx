@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "./Imgs/NameAndSloganOnly.png";
 import "./Home.css";
 import blackBun from "./Imgs/BlackBun.jpg";
@@ -16,6 +16,8 @@ import { Link } from "react-router-dom";
 import { UncontrolledCarousel } from "reactstrap";
 
 export default function Home() {
+  const [hoverdIndex, setHoveredIndex] = useState(null);
+
   return (
     <div>
       <header className="app-header">
@@ -46,17 +48,17 @@ export default function Home() {
           </div>
           <div className=" col-6 welcome-img">
             <img
-              className="mt-5 pe-1 col-4 home-img blackBun"
+              className="mt-5 pe-1 col-4 float-elem1 home-img"
               alt="A man performing into a mic"
               src={blackBun}
             />
             <img
-              className="mt-5 pe-1 col-4 home-img blackBun"
+              className="mt-5 pe-1 col-4 float-elem2 home-img"
               alt="A man performing into a mic"
               src={upUp}
             />
             <img
-              className="mt-5 col-4 home-img blackBun"
+              className="mt-5 col-4 float-elem3 home-img"
               alt="A man performing into a mic"
               src={bubblyGum}
             />

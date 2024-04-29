@@ -1,80 +1,128 @@
 .p-text {
-    line-height: 40px;
+  line-height: 40px;
 }
 
 .home-img {
-    border-radius: 4000px;
+  border-radius: 4000px;
+  box-shadow: 0 0 20px black;
+}
+
+.float-elem1 {
+  animation: float1 3s ease-in-out infinite;
+}
+
+.float-elem2 {
+  animation: float2 3.5s ease-in-out infinite;
+}
+
+.float-elem3 {
+  animation: float3 4s ease-in-out infinite;
+}
+
+@keyframes float1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float3 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .home-header {
-    color: var(--electric-blue) !important;
+  color: var(--electric-blue) !important;
 }
 
 .app-header {
-    position: relative;
+  position: relative;
 }
 
 .home-logo {
-    background: radial-gradient(black, var(--grey));
-    opacity: 0.9;
-    border-radius: 50px;
-    position: absolute;
-    top: 0;
-    left: 34%;
+  background: radial-gradient(black, var(--grey));
+  opacity: 0.9;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 34%;
 }
 
 .groupWave {
-    filter: brightness(75%);
-    border-radius: 30px;
-    max-height: 330px;
-    object-fit: cover;
+  filter: brightness(75%);
+  border-radius: 30px;
+  max-height: 330px;
+  object-fit: cover;
 }
 
 .welcome {
-    background: var(--light-grey);
+  background: var(--light-grey);
 }
 
 .home-newsletter {
-    background: var(--dark-grey);
-    border-radius: 20px;
+  background: var(--dark-grey);
+  border-radius: 20px;
 }
 
 .home-newsletter-head {
-    color: var(--electric-blue) !important;
+  color: var(--electric-blue) !important;
 }
 
 .connect-sect {
-    background: var(--dark-grey);
+  background: var(--dark-grey);
 }
 
 .connect-img {
-    max-height: 400px;
-    overflow: hidden;
-
+  max-height: 400px;
+  overflow: hidden;
 }
 
 .call-to-action-sect {
-    background: var(--electric-blue);
+  background: var(--electric-blue);
 }
 
-.call-text-sect{
-    border-radius: 20px;
-    border: 5px double #27998e;
-    box-shadow: 0px 0px 30px rgb(102, 131, 131);
+.call-text-sect {
+  border-radius: 20px;
+  border: 5px double #27998e;
+  box-shadow: 0px 0px 30px rgb(102, 131, 131);
 }
 
 .call-header {
-    font-weight: bolder;
-    font-size: 80px;
-    color: white !important;
+  font-weight: bolder;
+  font-size: 80px;
+  color: white !important;
 }
 
 .call-p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .carousel-img {
-    border-radius: 10px !important;
-    object-fit: contain;
-    overflow: hidden;
+  border-radius: 10px !important;
+  object-fit: contain;
+  overflow: hidden;
 }

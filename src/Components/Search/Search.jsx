@@ -45,7 +45,7 @@ export default function Search() {
             id="search"
             name="search"
             className="col-2 me-4 search-page-search"
-            placeholder="🔍   Enter Song Here"
+            placeholder="   🔍   Enter Song Here"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           ></input>
