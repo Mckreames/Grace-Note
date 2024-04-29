@@ -2,6 +2,7 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Login from "./Components/Login/Login";
 import GraceNoteNav from "./Components/GraceNoteNav/GraceNoteNav";
 import Home from "./Components/Home/Home";
 import Account from "./Components/Account/Account";
@@ -21,6 +22,7 @@ function App() {
         <GraceNoteNav />
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/login" element={<Login />}></Route>
           <Route path="/account" element={<Account />}></Route>
           <Route path="/song-search" element={<SongSearch />}></Route>
           <Route path="/randomizer" element={<Randomizer />}></Route>

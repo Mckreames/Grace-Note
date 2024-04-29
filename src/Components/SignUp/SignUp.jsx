@@ -1,6 +1,7 @@
 import React from "react";
 import { Form, Row, Col, Label, Input, FormGroup, Button } from "reactstrap";
 import "./SignUp.css";
+import Login from "../Login/Login";
 import redhead from "./Imgs/redhead.jpg";
 import Acoustic from "./Imgs/Acoustics.jpg";
 import BigBoom from "./Imgs/BigBoom.jpg";
@@ -121,6 +122,9 @@ export default function SignUp() {
             <Col>
               <Button>Sign Up</Button>
             </Col>
+          </Row>
+          <Row>
+            <Login />
           </Row>
         </Form>
       </div>

@@ -74,6 +74,11 @@ export default function GraceNoteNav() {
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
+            <NavItem>
+              <Link to="/login" style={{ textDecoration: "none" }}>
+                <NavLink>Login</NavLink>
+              </Link>
+            </NavItem>
           </Nav>
           <NavbarText></NavbarText>
         </Collapse>
