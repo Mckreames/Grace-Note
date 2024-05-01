@@ -13,10 +13,19 @@ import HandsUpNobodyMove from "./Imgs/HandsUpNobodyMove.jpg";
 import threeGuitars from "./Imgs/threeGuitars.jpg";
 import Lottie from "@lottiefiles/react-lottie-player";
 import { Link } from "react-router-dom";
-import { UncontrolledCarousel } from "reactstrap";
+import {
+  UncontrolledCarousel,
+  Button,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+} from "reactstrap";
 
 export default function Home() {
-  const [hoverdIndex, setHoveredIndex] = useState(null);
+  const [modal, setModal] = useState(false);
+
+  const toggle = () => setModal(!modal);
 
   return (
     <div>
@@ -48,12 +57,12 @@ export default function Home() {
           </div>
           <div className=" col-6 welcome-img">
             <img
-              className="mt-5 pe-1 col-4 float-elem1 home-img"
+              className="mt-5 col-4 float-elem1 home-img"
               alt="A man performing into a mic"
               src={blackBun}
             />
             <img
-              className="mt-5 pe-1 col-4 float-elem2 home-img"
+              className="mt-5  col-4 float-elem2 home-img"
               alt="A man performing into a mic"
               src={upUp}
             />
@@ -81,7 +90,6 @@ export default function Home() {
                 area!
               </p>
               <button className="col-8 prim-btn">Let's Go!</button>
-              {/* <button className="col-5 sec-btn">Newsletters</button> */}
             </div>
             <div className="offset-1 col-4">
               <h3>Made by Musicians with Musicians in Mind</h3>
@@ -161,19 +169,10 @@ export default function Home() {
         <div className="container-fluid row d-flex pt-5 pb-5 call-to-action-sect">
           <div className="offset-1 col-5 align-content-center">
             <img
-              className="col-12 pb-5 home-img"
+              className="col-12 mb-5 home-img"
               alt="A sign that says, music is the way"
               src={wrestleMic}
             />
-            {/* <Lottie
-                        src="https://lottie.host/487cd45d-92f6-4dd5-ac29-8bb5fcec45e6/0lplu3QzPe.json"
-                        background="transparent"
-                        speed={1}
-                        style={{ width: '300px', height: '300px' }}
-                        loop
-                        autoplay
-                        /> */}
-
             <Link to="/about">
               <button className="col-4 p-3 quar-btn">About Us</button>
             </Link>
@@ -189,7 +188,6 @@ export default function Home() {
             <Link to="/sign-up">
               <button className="col-6 p-3 mt-4 ter-btn">Sign Up</button>
             </Link>
-            {/* <p className="p-text call-p">Ready to elevate your gospel music experience and deepen your connection to the divine through music? Join Grace Note today and unlock a world of soul-stirring melodies, uplifting worship songs, and vibrant community fellowship. Whether you're a musician, singer, or devoted worshipper, Grace Note offers the tools and resources you need to enhance your worship experience and grow in your faith journey. Don't miss out on the opportunity to join a thriving community of gospel enthusiasts and experience the transformative power of music. Embrace the harmony of faith and music with Grace Note—download now and let your soul soar!</p> */}
           </div>
         </div>
       </main>

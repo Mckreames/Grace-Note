@@ -5,6 +5,8 @@
 .home-img {
   border-radius: 4000px;
   box-shadow: 0 0 20px black;
+  transform: scale(1.1);
+  border: 5px solid transparent;
 }
 
 .float-elem1 {
