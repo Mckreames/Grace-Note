@@ -11,7 +11,7 @@ import wrestleMic from "./Imgs/wrestleMic.jpg";
 import guitarLean from "./Imgs/guitarLean.jpg";
 import HandsUpNobodyMove from "./Imgs/HandsUpNobodyMove.jpg";
 import threeGuitars from "./Imgs/threeGuitars.jpg";
-import Lottie from "@lottiefiles/react-lottie-player";
+import phoneNotifications from "./Imgs/phoneNotifications.png";
 import { Link } from "react-router-dom";
 import {
   UncontrolledCarousel,
@@ -166,18 +166,18 @@ export default function Home() {
                         /> */}
           </div>
         </div>
-        <div className="container-fluid row d-flex pt-5 pb-5 call-to-action-sect">
-          <div className="offset-1 col-5 align-content-center">
+        <div className="container-fluid row d-flex call-to-action-sect">
+          <div className="offset-1 col-4 phone">
             <img
-              className="col-12 mb-5 home-img"
+              className="col-12 mb-5 home-img phone-img"
               alt="A sign that says, music is the way"
-              src={wrestleMic}
+              src={phoneNotifications}
             />
-            <Link to="/about">
+            {/* <Link to="/about">
               <button className="col-4 p-3 quar-btn">About Us</button>
-            </Link>
+            </Link> */}
           </div>
-          <div className="offset-1 col-4 call-text-sect">
+          <div className="offset-1 col-5 pt-5 pb-5 mt-5 call-text-sect">
             <h2 className="call-header">Let's Do This!</h2>
             <p className="offset-1 col-10 p-text call-p">
               Ready to elevate your gospel music experience and deepen your
