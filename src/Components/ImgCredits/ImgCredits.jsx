@@ -140,27 +140,39 @@ export default function ImgCredits() {
           </li>
           <li className="credits-link">
             Photo by Eric Esma:
-            https://www.pexels.com/photo/man-wearing-denim-jacket-singing-on-stage-894156/
+            <a href="https://www.pexels.com/photo/man-wearing-denim-jacket-singing-on-stage-894156/">
+              https://www.pexels.com/photo/man-wearing-denim-jacket-singing-on-stage-894156/
+            </a>
           </li>
           <li className="credits-link">
             Photo by Laura Stanley:
-            https://www.pexels.com/photo/people-in-a-concert-2147029/
+            <a href="https://www.pexels.com/photo/people-in-a-concert-2147029/">
+              https://www.pexels.com/photo/people-in-a-concert-2147029/
+            </a>
           </li>
           <li className="credits-link">
             Photo by Artem Saranin:
-            https://www.pexels.com/photo/clear-marble-ball-1046466/
+            <a href="https://www.pexels.com/photo/clear-marble-ball-1046466/">
+              https://www.pexels.com/photo/clear-marble-ball-1046466/
+            </a>
           </li>
           <li className="credits-link">
             Photo by ROMBO:
-            https://www.pexels.com/photo/close-up-of-a-guitar-pick-6444855/
+            <a href="https://www.pexels.com/photo/close-up-of-a-guitar-pick-6444855/">
+              https://www.pexels.com/photo/close-up-of-a-guitar-pick-6444855/
+            </a>
           </li>
           <li className="credits-link">
             Photo by Caleb Oquendo:
-            https://www.pexels.com/photo/man-in-blue-shirt-raising-his-hands-in-the-crowd-7780806/
+            <a href="https://www.pexels.com/photo/man-in-blue-shirt-raising-his-hands-in-the-crowd-7780806/">
+              https://www.pexels.com/photo/man-in-blue-shirt-raising-his-hands-in-the-crowd-7780806/
+            </a>
           </li>
           <li className="credits-link">
             Photo by Luis Quintero:
-            https://www.pexels.com/photo/men-dancing-on-stange-2257475/
+            <a href="https://www.pexels.com/photo/men-dancing-on-stange-2257475/">
+              https://www.pexels.com/photo/men-dancing-on-stange-2257475/
+            </a>
           </li>
           <li className="credits-link">
             <a target="_blank" href="https://icons8.com/icon/364/settings">
@@ -173,47 +185,69 @@ export default function ImgCredits() {
           </li>
           <li className="credits-link">
             Photo by Yan Krukau:
-            https://www.pexels.com/photo/a-man-singing-on-a-stage-with-drums-and-smoke-9009515/
+            <a href="https://www.pexels.com/photo/a-man-singing-on-a-stage-with-drums-and-smoke-9009515/">
+              https://www.pexels.com/photo/a-man-singing-on-a-stage-with-drums-and-smoke-9009515/
+            </a>
           </li>
           <li className="credits-link">
             Photo by Md Jawadur Rahman:
-            https://www.pexels.com/photo/man-in-black-jacket-singing-on-stage-3739385/
+            <a href="https://www.pexels.com/photo/man-in-black-jacket-singing-on-stage-3739385/">
+              https://www.pexels.com/photo/man-in-black-jacket-singing-on-stage-3739385/
+            </a>
           </li>
           <li className="credits-link">
             Photo by Yan Krukau:
-            https://www.pexels.com/photo/a-woman-singing-while-playing-the-guitar-9009523/
+            <a href="https://www.pexels.com/photo/a-woman-singing-while-playing-the-guitar-9009523/">
+              https://www.pexels.com/photo/a-woman-singing-while-playing-the-guitar-9009523/
+            </a>
           </li>
           <li className="credits-link">
             Photo by Kairos Panamá:
-            https://www.pexels.com/photo/people-singing-on-church-mass-16721672/
+            <a href="https://www.pexels.com/photo/people-singing-on-church-mass-16721672/">
+              https://www.pexels.com/photo/people-singing-on-church-mass-16721672/
+            </a>
           </li>
           <li className="credits-link">
             Photo by Irina Iriser:
-            https://www.pexels.com/photo/keyboard-in-blue-light-11277097/
+            <a href="https://www.pexels.com/photo/keyboard-in-blue-light-11277097/">
+              https://www.pexels.com/photo/keyboard-in-blue-light-11277097/
+            </a>
           </li>
           <li className="credits-link">
             Photo by Emirhan Sucu:
-            https://www.pexels.com/photo/man-with-saz-sitting-on-a-chair-in-the-field-18411640/
+            <a href="https://www.pexels.com/photo/man-with-saz-sitting-on-a-chair-in-the-field-18411640/">
+              https://www.pexels.com/photo/man-with-saz-sitting-on-a-chair-in-the-field-18411640/
+            </a>
           </li>
           <li className="credits-link">
             Photo by Luis Quintero:
-            https://www.pexels.com/photo/grayscale-photography-of-people-worshiping-2774570/
+            <a href="https://www.pexels.com/photo/grayscale-photography-of-people-worshiping-2774570/">
+              https://www.pexels.com/photo/grayscale-photography-of-people-worshiping-2774570/
+            </a>
           </li>
           <li className="credits-link">
             Photo by PNW Production:
-            https://www.pexels.com/photo/young-girls-sitting-while-playing-musical-instruments-7577331/
+            <a href="https://www.pexels.com/photo/young-girls-sitting-while-playing-musical-instruments-7577331/">
+              https://www.pexels.com/photo/young-girls-sitting-while-playing-musical-instruments-7577331/
+            </a>
           </li>
           <li className="credits-link">
             Photo by Andrea Piacquadio:
-            https://www.pexels.com/photo/man-in-red-polo-shirt-3777948/
+            <a href="https://www.pexels.com/photo/man-in-red-polo-shirt-3777948/">
+              https://www.pexels.com/photo/man-in-red-polo-shirt-3777948/
+            </a>
           </li>
           <li className="credits-link">
             Photo by Stephen Niemeier:
-            https://www.pexels.com/photo/gray-electric-keyboard-63696/
+            <a href="https://www.pexels.com/photo/gray-electric-keyboard-63696/">
+              https://www.pexels.com/photo/gray-electric-keyboard-63696/
+            </a>
           </li>
           <li className="credits-link">
             Photo by Luis Quintero:
-            https://www.pexels.com/photo/man-wearing-blue-dress-2351723/
+            <a href="https://www.pexels.com/photo/man-wearing-blue-dress-2351723/">
+              https://www.pexels.com/photo/man-wearing-blue-dress-2351723/
+            </a>
           </li>
           <li className="credits-link"></li>
         </ul>
