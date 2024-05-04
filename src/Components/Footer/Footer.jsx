@@ -9,17 +9,21 @@ export default function Footer() {
       <Link
         to="/terms-of-service"
         style={{ textDecoration: "none" }}
-        className="col-2"
+        className="col-2 foot-link"
       >
         <p>Terms of Service</p>
       </Link>
-      <Link to="/about-us" style={{ textDecoration: "none" }} className="col-2">
+      <Link
+        to="/about-us"
+        style={{ textDecoration: "none" }}
+        className="col-2 foot-link"
+      >
         <p>About Us</p>
       </Link>
       <Link
         to="/img-credits"
         style={{ textDecoration: "none" }}
-        className="col-2"
+        className="col-2 foot-link"
       >
         <p>Credits</p>
       </Link>

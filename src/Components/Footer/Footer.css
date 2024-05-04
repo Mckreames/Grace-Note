@@ -1,8 +1,9 @@
 .foot-sheet {
-    background: rgb(12, 12, 12);
-    color: grey;
+  background: rgb(12, 12, 12);
+  color: grey;
+  justify-content: space-between;
 }
 
 .Link a:hover {
-    color: var(--electric-blue);
+  color: var(--electric-blue);
 }
