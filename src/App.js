@@ -14,6 +14,7 @@ import About from "./Components/About/About";
 import SignUp from "./Components/SignUp/SignUp";
 import TermsOfService from "./Components/TermsOfService/TermsOfService";
 import Footer from "./Components/Footer/Footer";
+import ImgCredits from "./Components/ImgCredits/ImgCredits";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/sign-up" element={<SignUp />}></Route>
           <Route path="/terms-of-service" element={<TermsOfService />}></Route>
+          <Route path="/img-credits" element={<ImgCredits />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
         <Footer />
