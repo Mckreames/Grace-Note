@@ -12,6 +12,18 @@
   background-color: var(--very-light-grey);
 }
 
+.accordion-sect {
+  background-color: var(--dark-grey) !important;
+}
+
+.accordion-header {
+  background-color: var(--dark-grey) !important;
+}
+
+.accordion-body {
+  background: var(--light-grey);
+}
+
 .search-result {
   background-color: var(--dark-grey);
   box-shadow: 0px 4px 8px var(--electric-blue);

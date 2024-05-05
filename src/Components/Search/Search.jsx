@@ -1,9 +1,26 @@
 import React, { useState } from "react";
 import "./Search.css";
+import { Link } from "react-router-dom";
+import {
+  Accordion,
+  AccordionBody,
+  AccordionHeader,
+  AccordionItem,
+  NavLink,
+} from "reactstrap";
 
 export default function Search() {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResult, setSearchResult] = useState(null);
+  const [open, setOpen] = useState("1");
+
+  const toggle = (id) => {
+    if (open === id) {
+      setOpen();
+    } else {
+      setOpen(id);
+    }
+  };
 
   const handleSubmit = async (event) => {
     if (event === undefined) {
@@ -38,7 +55,7 @@ export default function Search() {
         <h2 className="pb-4 color-electric">
           Come Find Exactly What You're Looking For!
         </h2>
-        <form onSubmit={handleSubmit}>
+        <form className="mb-3" onSubmit={handleSubmit}>
           <input
             aria-label="search"
             type="search"
@@ -51,6 +68,24 @@ export default function Search() {
           ></input>
           <button type="submit">Search</button>
         </form>
+        <div className="offset-4 col-4 accordion-sect">
+          <Accordion open={open} toggle={toggle}>
+            <AccordionItem>
+              <AccordionHeader className="accordion-header" targetId="1">
+                Can't find what you're looking for?
+              </AccordionHeader>
+              <AccordionBody className="accordion-body" accordionId="1">
+                Sorry our library doesn't include your song. Why not add it to
+                your personal list?
+                <strong>
+                  <Link to="/song-add" style={{ textDecoration: "none" }}>
+                    <p>Add Custom Song</p>
+                  </Link>
+                </strong>
+              </AccordionBody>
+            </AccordionItem>
+          </Accordion>
+        </div>
       </section>
       <section className="offset-1 col-10 mb-5 pt-4 search-result">
         <div>

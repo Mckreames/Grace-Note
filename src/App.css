@@ -141,3 +141,7 @@ ul {
 .color-electric {
   color: var(--electric-blue) !important;
 }
+
+.color-black {
+  color: black;
+}
