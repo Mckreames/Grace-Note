@@ -5,8 +5,8 @@ export default function ImgCredits() {
   return (
     <>
       <h1>Credits</h1>
-      <section className="credit-sect">
-        <h3>Image Credits</h3>
+      <section className="offset-1 col-10 p-3 mb-5 credit-sect">
+        <h3 className="credit-title">Image Credits</h3>
         <ul>
           <li className="credits-link">
             Photo by{" "}
@@ -175,13 +175,14 @@ export default function ImgCredits() {
             </a>
           </li>
           <li className="credits-link">
-            <a target="_blank" href="https://icons8.com/icon/364/settings">
-              Settings
-            </a>{" "}
-            icon by{" "}
+            Photo by
             <a target="_blank" href="https://icons8.com">
               Icons8
             </a>
+            :
+            <a target="_blank" href="https://icons8.com/icon/364/settings">
+              Settings
+            </a>{" "}
           </li>
           <li className="credits-link">
             Photo by Yan Krukau:
@@ -249,7 +250,6 @@ export default function ImgCredits() {
               https://www.pexels.com/photo/man-wearing-blue-dress-2351723/
             </a>
           </li>
-          <li className="credits-link"></li>
         </ul>
       </section>
     </>

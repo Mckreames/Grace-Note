@@ -1,4 +1,13 @@
+.credit-sect {
+  background-color: var(--light-grey);
+  border-radius: 35px;
+}
+
 .credit-sect > ul > li {
   line-height: 40px;
   text-align: left;
+}
+
+.credit-title {
+  text-decoration: underline;
 }
