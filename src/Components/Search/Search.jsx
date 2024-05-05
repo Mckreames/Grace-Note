@@ -74,7 +74,10 @@ export default function Search() {
               <AccordionHeader className="accordion-header" targetId="1">
                 Can't find what you're looking for?
               </AccordionHeader>
-              <AccordionBody className="accordion-body" accordionId="1">
+              <AccordionBody
+                className="p-0 color-white accordion-body"
+                accordionId="1"
+              >
                 Sorry our library doesn't include your song. Why not add it to
                 your personal list?
                 <strong>
