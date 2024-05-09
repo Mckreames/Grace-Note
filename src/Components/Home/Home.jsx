@@ -28,18 +28,22 @@ export default function Home() {
   const toggle = () => setModal(!modal);
 
   return (
-    <div>
+    <>
       <header className="app-header">
         <img
-          className="row offset-2 col-8 mt-5 mb-5 groupWave"
+          className="row offset-md-1 offset-lg-2 col-12 col-md-10 col-lg-8 mt-5 mb-5 groupWave"
           alt="A group of people performing on a stage"
           src={groupWave}
         />
-        <img className="row col-4 mt-4 p-5 home-logo" alt="logo" src={logo} />
+        <img
+          className="row offset-1 offset-md-2 offset-lg-4 col-10 col-md-8 col-lg-4 mt-4 p-5 home-logo"
+          alt="logo"
+          src={logo}
+        />
       </header>
-      <main>
-        <div className="container-fluid row pb-5 welcome">
-          <div className="offset-1 pt-5 col-4 welcome-text">
+      <main className="overflow-x-hidden">
+        <div className="row pb-5 welcome">
+          <div className="offset-1 col-10 col-md-4 pt-5 welcome-text">
             <h1 className="pt-3 home-header"> Welcome! </h1>
             <p className="p-text">
               Welcome to Grace Note, your haven for gospel music enthusiasts.
@@ -49,13 +53,18 @@ export default function Home() {
               your faith journey and expresses devotion through music.
             </p>
             <Link to="/sign-up">
-              <button className="col-5 prim-btn">Sign Up</button>
+              <button className="offset-1 col-10 col-md-10 col-lg-5 mb-2 mb-lg-0 prim-btn">
+                Sign Up
+              </button>
             </Link>
             <Link to="/about">
-              <button className="col-5 sec-btn">About Us</button>
+              <button className="offset-1 col-10 col-md-10 col-lg-5 sec-btn">
+                About Us
+              </button>
             </Link>
           </div>
-          <div className=" col-6 welcome-img">
+          <div className="w-100 d-md-none"></div>
+          <div className=" d-none d-md-block col col-md-6 mt-md-5 mt-lg-0 pt-md-5 pt-lg-0 welcome-img">
             <img
               className="mt-5 col-4 float-elem1 home-img"
               alt="A man performing into a mic"
@@ -73,14 +82,14 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="container-fluid pt-5 pb-5">
+        <div className="pt-5 pb-5">
           <h2 className="pb-5">
             Practice and Coordinate the way{" "}
             <span className="fancy-text">YOU</span> want
           </h2>
           <div className="w-100"></div>
           <div className="row">
-            <div className="offset-1 col-5 pt-3 home-newsletter">
+            <div className="offset-sm-1 col-12 col-sm-10 col-md-5 pt-3 pb-3 pb-md-0 home-newsletter">
               <h3 className="pb-3 home-newsletter-head">
                 Join Our Newsletter!
               </h3>
@@ -91,7 +100,8 @@ export default function Home() {
               </p>
               <button className="col-8 prim-btn">Let's Go!</button>
             </div>
-            <div className="offset-1 col-4">
+            <div className="w-100 w-sm-none"></div>
+            <div className="offset-1 col-10 col-md-6 mt-sm-3">
               <h3>Made by Musicians with Musicians in Mind</h3>
               <p className="p-text">
                 Grace Note offers a sacred repertoire for gospel musicians,
@@ -104,8 +114,54 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container-fluid row pt-5 pb-5 connect-sect">
-          <div className="offset-1 col-5">
+        <div className="row pt-5 pb-5 connect-sect">
+          {/* Carousel for pages below 768px. placed here to add better flow to smaller screens */}
+          <div className="d-block d-md-none offset-sm-1 col-12 col-sm-10 pb-5 connect-img">
+            <UncontrolledCarousel
+              items={[
+                {
+                  altText: "",
+                  caption: "",
+                  key: 1,
+                  src: reach,
+                  className: "carousel-img",
+                },
+                {
+                  altText: "",
+                  caption: "",
+                  key: 2,
+                  src: HandsUpNobodyMove,
+                  className: "carousel-img",
+                },
+                {
+                  altText: "",
+                  caption: "",
+                  key: 3,
+                  src: threeGuitars,
+                  className: "carousel-img",
+                },
+                {
+                  altText: "",
+                  caption: "",
+                  key: 4,
+                  src: guitarLean,
+                  className: "carousel-img",
+                },
+                {
+                  altText: "",
+                  caption: "",
+                  key: 5,
+                  src: theaterStyle,
+                  className: "carousel-img",
+                },
+              ]}
+            />
+            {/* <img className="col-12 home-img"
+                            alt="A man performing into a mic"
+                            src={reach}
+                        /> */}
+          </div>
+          <div className="offset-1 col-10 col-md-5 pt-4 pt-md-0">
             <h2 className="connect-text">But Not Just For Musicians</h2>
             <p className="p-text">
               But Grace Note isn't just a music app—it's a beacon of hope and
@@ -120,7 +176,8 @@ export default function Home() {
               worship experience.
             </p>
           </div>
-          <div className="offset-1 col-4 connect-img">
+          {/* Carousel for pages above 768px */}
+          <div className="d-none d-md-block offset-1 col-4 connect-img">
             <UncontrolledCarousel
               items={[
                 {
@@ -167,17 +224,14 @@ export default function Home() {
           </div>
         </div>
         <div className="container-fluid row d-flex call-to-action-sect">
-          <div className="offset-1 col-4 phone">
+          <div className="d-none d-md-block offset-1 col-10 col-md-4 phone">
             <img
               className="col-12 mb-5 home-img phone-img"
               alt="A sign that says, music is the way"
               src={phoneNotifications}
             />
-            {/* <Link to="/about">
-              <button className="col-4 p-3 quar-btn">About Us</button>
-            </Link> */}
           </div>
-          <div className="offset-1 col-5 pt-5 pb-5 mt-5 call-text-sect">
+          <div className="offset-1 col-10 col-md-5 pt-md-5 pb-md-5 mt-5 call-text-sect">
             <h2 className="call-header">Let's Do This!</h2>
             <p className="offset-1 col-10 p-text call-p">
               Ready to elevate your gospel music experience and deepen your
@@ -189,8 +243,16 @@ export default function Home() {
               <button className="col-6 p-3 mt-4 ter-btn">Sign Up</button>
             </Link>
           </div>
+          <div className="d-md-none w-100"></div>
+          <div className="offset-1 col-4 phone">
+            <img
+              className="col-12 mb-5 home-img phone-img"
+              alt="A sign that says, music is the way"
+              src={phoneNotifications}
+            />
+          </div>
         </div>
       </main>
-    </div>
+    </>
   );
 }

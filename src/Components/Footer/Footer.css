@@ -7,3 +7,9 @@
 .Link a:hover {
   color: var(--electric-blue);
 }
+
+@media (max-width: 576px) {
+  .foot-sheet {
+    font-size: 10px;
+  }
+}
