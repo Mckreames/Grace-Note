@@ -4,6 +4,12 @@
   background-repeat: repeat-y;
 }
 
+.dark-frost {
+  border-radius: 40px;
+  background-color: var(--dark-grey);
+  opacity: 0.8;
+}
+
 .manage-sheet {
   box-shadow: 0 0 10px black;
   border-radius: 20px;
@@ -37,6 +43,7 @@ button:hover {
 .delete-btn {
   margin-right: 0;
   padding: 0;
+  width: 100px;
 }
 
 .added-songs-list {
@@ -78,4 +85,13 @@ button:hover {
 
 .song-item .song-info:last-child {
   /* Your styles here */
+}
+
+@media (max-width: 576px) {
+  .dark-frost {
+    font-size: 40px !important;
+  }
+
+  .save-your-favorites {
+  }
 }

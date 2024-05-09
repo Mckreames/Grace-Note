@@ -4,29 +4,31 @@ import "./SongListPersonal.css";
 
 function SongItem({ id, name, artist, songKey, bpm, deleteItem }) {
   return (
-    <div className="col p-2 song-item">
-      <div className="col-1 song-info">
+    <div className="col p-2 pb-lg-5 pt-lg-3 pb-xl-2 pt-xl-2 song-item">
+      {/* <div className=" col-1 song-info">
         <span className="pe-4 info-value">{id}</span>
-      </div>
-      <div className="col-4 song-info">
+      </div> */}
+      <div className="offset-1 col-4 song-info">
         <span className="info-label">Name: </span>
         <h4 className="info-value">{name}</h4>
       </div>
-      <div className="col-4 song-info">
+      <div className="offset-1 col-4 song-info">
         <span className="info-label">Artist: </span>
         <h6 className="info-value">{artist}</h6>
       </div>
-      <div className="col-1 song-info">
+      <div className="d-lg-none w-100"></div>
+      <div className="offset-1 offset-lg-0 col-4 col-md-1 song-info">
         <span className="info-label">Key: </span>
         <h6 className="info-value">{songKey}</h6>
       </div>
-      <div className="col-1 song-info">
+      <div className="d-md-none w-100"></div>
+      <div className="offset-1 col-4 col-md-1 song-info">
         <span className="info-label">BPM: </span>
         <h6 className="info-value">{bpm}</h6>
       </div>
       <button
         onClick={() => deleteItem(id)}
-        className="col-1 float-end delete-btn"
+        className="col-1 float-end align-self-center delete-btn"
       >
         Delete
       </button>
@@ -117,9 +119,9 @@ export default function SongAddForm({ id }) {
     <div className="col-12 background">
       <div className="offset-1 col-10">
         <header className="App-header">
-          <h1 className="pt-4"> Manage List </h1>
-          <h4 className="offset-4 col-4 pt-2 pb-2 save-your-favorites">
-            Add the songs you can't find now or delete the songs you don't want
+          <h1 className="pt-2 pb-2 mt-3 dark-frost"> Song Suggestion List </h1>
+          <h4 className="offset-1 offset-md-4 col-10 col-md-4 pt-2 pb-2 save-your-favorites">
+            Recommend songs you can't find
           </h4>
         </header>
         <div className="manage-sheet">
@@ -129,9 +131,14 @@ export default function SongAddForm({ id }) {
             onSubmit={handleSubmit}
             className="pt-5 pb-5 col form"
           >
-            <label htmlFor="name">Song</label>
+            <label
+              className="offset-0 offset-md-1 col-12 col-md-1"
+              htmlFor="name"
+            >
+              Song
+            </label>
             <input
-              className="col-2 input"
+              className="offset-1 offset-md-0 col-10 col-md-3 m-0 input"
               type="text"
               required
               id="name"
@@ -140,9 +147,11 @@ export default function SongAddForm({ id }) {
               maxLength={255}
               onChange={handleNameChange}
             />
-            <label htmlFor="artist">Artist</label>
+            <label className="offset-md-1 col-12 col-md-1" htmlFor="artist">
+              Artist
+            </label>
             <input
-              className="col-2 input"
+              className="offset-1 offset-md-0 col-10 col-md-3 input"
               type="text"
               required
               id="artist"
@@ -151,9 +160,12 @@ export default function SongAddForm({ id }) {
               maxLength={70}
               onChange={handleArtistChange}
             />
-            <label htmlFor="songKey">Key</label>
+            <div className="d-none d-md-block d-lg-none w-100"></div>
+            <label className="offset-1" htmlFor="songKey">
+              Key
+            </label>
             <input
-              className="col-1 input"
+              className="offset-1 offset-md-0 col-10 col-md-1 input"
               type="text"
               required
               id="songKey"
@@ -162,9 +174,11 @@ export default function SongAddForm({ id }) {
               maxLength={3}
               onChange={handleSongKeyChange}
             />
-            <label htmlFor="bpm">BPM</label>
+            <label className="offset-md-2" htmlFor="bpm">
+              BPM
+            </label>
             <input
-              className="col-1 input"
+              className="offset-1 offset-md-0 col-10 col-md-1 input"
               type="number"
               id="bpm"
               name="bpm"
