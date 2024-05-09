@@ -36,7 +36,7 @@ export default function Home() {
           src={groupWave}
         />
         <img
-          className="row offset-1 offset-md-2 offset-lg-4 col-10 col-md-8 col-lg-4 mt-4 p-5 home-logo"
+          className="row offset-1 offset-md-2 offset-lg-3 offset-xxl-4 col-10 col-md-8 col-lg-6 col-xxl-4 mt-4 p-5 home-logo"
           alt="logo"
           src={logo}
         />
@@ -44,7 +44,7 @@ export default function Home() {
       <main className="overflow-x-hidden">
         <div className="row pb-5 welcome">
           <div className="offset-1 col-10 col-md-4 pt-5 welcome-text">
-            <h1 className="pt-3 home-header"> Welcome! </h1>
+            <h1 className="pt-3 home-header">Welcome!</h1>
             <p className="p-text">
               Welcome to Grace Note, your haven for gospel music enthusiasts.
               Immerse yourself in the soulful melodies that uplift your spirit
@@ -53,7 +53,7 @@ export default function Home() {
               your faith journey and expresses devotion through music.
             </p>
             <Link to="/sign-up">
-              <button className="offset-1 col-10 col-md-10 col-lg-5 mb-2 mb-lg-0 prim-btn">
+              <button className="offset-1 col-10 col-md-10 col-lg-5 mb-2 prim-btn">
                 Sign Up
               </button>
             </Link>
@@ -64,7 +64,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="w-100 d-md-none"></div>
-          <div className=" d-none d-md-block col col-md-6 mt-md-5 mt-lg-0 pt-md-5 pt-lg-0 welcome-img">
+          <div className=" d-none d-md-block align-self-center col col-md-6 welcome-img">
             <img
               className="mt-5 col-4 float-elem1 home-img"
               alt="A man performing into a mic"
@@ -89,7 +89,7 @@ export default function Home() {
           </h2>
           <div className="w-100"></div>
           <div className="row">
-            <div className="offset-sm-1 col-12 col-sm-10 col-md-5 pt-3 pb-3 pb-md-0 home-newsletter">
+            <div className="offset-sm-1 col-12 col-sm-10 col-md-4 pt-3 pb-3 home-newsletter">
               <h3 className="pb-3 home-newsletter-head">
                 Join Our Newsletter!
               </h3>
@@ -98,10 +98,12 @@ export default function Home() {
                 lyrics, chord charts, new artists, and even concerts in your
                 area!
               </p>
-              <button className="col-8 prim-btn">Let's Go!</button>
+              <button className="offset-md-1 col-8 col-lg-10 prim-btn">
+                Let's Go!
+              </button>
             </div>
-            <div className="w-100 w-sm-none"></div>
-            <div className="offset-1 col-10 col-md-6 mt-sm-3">
+            <div className="w-100 d-md-none"></div>
+            <div className="offset-1 col-10 col-md-5 col-lg-5 mt-sm-3">
               <h3>Made by Musicians with Musicians in Mind</h3>
               <p className="p-text">
                 Grace Note offers a sacred repertoire for gospel musicians,
@@ -177,7 +179,7 @@ export default function Home() {
             </p>
           </div>
           {/* Carousel for pages above 768px */}
-          <div className="d-none d-md-block offset-1 col-4 connect-img">
+          <div className="d-none d-md-block align-self-center offset-lg-1 col-4 col-md-5 col-lg-4 connect-img">
             <UncontrolledCarousel
               items={[
                 {
@@ -231,7 +233,7 @@ export default function Home() {
               src={phoneNotifications}
             />
           </div>
-          <div className="offset-1 col-10 col-md-5 pt-md-5 pb-md-5 mt-5 call-text-sect">
+          <div className="offset-lg-1 col-12 col-md-6 pt-lg-5 pb-lg-5 mt-5 call-text-sect">
             <h2 className="call-header">Let's Do This!</h2>
             <p className="offset-1 col-10 p-text call-p">
               Ready to elevate your gospel music experience and deepen your
@@ -240,11 +242,13 @@ export default function Home() {
               and vibrant community fellowship.
             </p>
             <Link to="/sign-up">
-              <button className="col-6 p-3 mt-4 ter-btn">Sign Up</button>
+              <button className="offset-1 col-6 p-3 mt-md-2 mt-lg-4 ter-btn">
+                Sign Up
+              </button>
             </Link>
           </div>
           <div className="d-md-none w-100"></div>
-          <div className="offset-1 col-4 phone">
+          <div className="d-none d-sm-block d-md-none offset-1 col-10 phone">
             <img
               className="col-12 mb-5 home-img phone-img"
               alt="A sign that says, music is the way"
