@@ -78,11 +78,11 @@ export default function Search() {
                 className="p-0 color-white accordion-body"
                 accordionId="1"
               >
-                Sorry our library doesn't include your song. Why not add it to
-                your personal list?
+                Sorry our library doesn't include your song. Why not put in a
+                request to add it?
                 <strong>
                   <Link to="/song-add" style={{ textDecoration: "none" }}>
-                    <p>Add Custom Song</p>
+                    <p>Request Song Form</p>
                   </Link>
                 </strong>
               </AccordionBody>
