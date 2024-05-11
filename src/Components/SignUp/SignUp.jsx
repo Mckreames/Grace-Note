@@ -73,7 +73,9 @@ export default function SignUp() {
         <img className="fade8 sign-up-img" src={TwoGirls}></img>
       </div>
       <div className="col-6 pt-5 sign-up-form">
-        <h1 className="mt-5 pt-5 color-light-grey">Welcome Back!</h1>
+        <h1 className="mt-5 pt-5 color-light-grey welcome-back">
+          Welcome Back!
+        </h1>
         <h2 className="pb-4 ">
           All of your
           <span className="fancy-text sign-up-fancy"> favorites</span> are
@@ -85,12 +87,13 @@ export default function SignUp() {
           it's 100% FREE! No Cards, No Tiers, No Worries.
         </p>
         <Form className="offset-2 col-8 pt-3">
-          <Row className="row-cols-lg-auto g-3 align-items-center">
+          <Row className="row-cols-lg-auto g-3 align-items-center justify-content-center">
             <Col>
               <Label className="visually-hidden" for="exampleEmail">
                 Username
               </Label>
               <Input
+                className=""
                 id="exampleEmail"
                 name="email"
                 placeholder="Username"
@@ -102,12 +105,14 @@ export default function SignUp() {
                 Email
               </Label>
               <Input
+                className=""
                 id="examplePassword"
                 name="password"
                 placeholder="Email"
                 type="password"
               />
             </Col>
+            <div className="w-100 d-sm-none"></div>
             <Col>
               <FormGroup check>
                 <Input id="exampleCheckbox" name="checkbox" type="checkbox" />
@@ -116,6 +121,7 @@ export default function SignUp() {
                 </Label>
               </FormGroup>
             </Col>
+            <div className="w-100 d-lxl-none"></div>
             <Col>
               <Button>Sign In</Button>
             </Col>

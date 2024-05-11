@@ -71,3 +71,9 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 1399px) {
+  .welcome-back {
+    font-size: 50px !important;
+  }
+}
