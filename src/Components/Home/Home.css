@@ -10,15 +10,15 @@
 }
 
 .float-elem1 {
-  animation: float1 3s ease-in-out infinite;
+  animation: float1 2.5s ease-in-out infinite;
 }
 
 .float-elem2 {
-  animation: float2 3.5s ease-in-out infinite;
+  animation: float2 3s ease-in-out infinite;
 }
 
 .float-elem3 {
-  animation: float3 4s ease-in-out infinite;
+  animation: float3 3.5s ease-in-out infinite;
 }
 
 @keyframes float1 {
@@ -63,6 +63,7 @@
 
 .app-header {
   position: relative;
+  z-index: 0;
 }
 
 .home-logo {

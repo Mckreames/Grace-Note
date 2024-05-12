@@ -1,6 +1,6 @@
 .nav-sect {
   height: 120px;
-
+  z-index: 9999;
   background-color: var(--grey);
   box-shadow: 1px 1px 10px var(--electric-blue);
 }

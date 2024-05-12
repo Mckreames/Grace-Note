@@ -15,7 +15,7 @@
   border-radius: 20px;
   height: 300px;
   margin: 5px;
-  box-shadow: 5px 5px 10px var(--dark-grey);
+  box-shadow: 3px 5px 100px var(--dark-grey);
 }
 
 .sign-up-form {

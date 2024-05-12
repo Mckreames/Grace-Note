@@ -113,7 +113,7 @@ export default function SignUp() {
                   type="password"
                 />
               </Col>
-              <div className="w-100 d-sm-none"></div>
+              <div className="w-100 d-sm-none d-xxl-block"></div>
               <Col>
                 <FormGroup check>
                   <Input id="exampleCheckbox" name="checkbox" type="checkbox" />
