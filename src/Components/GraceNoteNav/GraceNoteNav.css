@@ -25,7 +25,7 @@
 @keyframes pulse {
   from,
   to {
-    box-shadow: 0 0 1px var(--electric-blue);
+    box-shadow: 0 0 3px var(--electric-blue);
   }
 
   50% {
@@ -35,10 +35,7 @@
 
 .navbar-toggler {
   color: var(--electric-blue) !important;
-}
-
-.navbar-toggler-icon {
-  color: var(--electric-blue) !important;
+  background: var(--electric-blue);
 }
 
 .nav-link {
@@ -46,7 +43,6 @@
   font-size: 25px;
   font-weight: lighter;
   background-color: var(--grey);
-  border-radius: 0 0 10px 10px;
 }
 
 .nav-link:hover {

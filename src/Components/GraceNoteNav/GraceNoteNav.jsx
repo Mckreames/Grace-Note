@@ -24,7 +24,7 @@ export default function GraceNoteNav() {
 
   return (
     <div className="mb-2 nav-sect">
-      <Navbar className="offset-1 col-10" expand="md" style={{ zIndex: 100 }}>
+      <Navbar className="offset-1 col-10" expand="md" style={{ zIndex: 999 }}>
         <NavbarBrand className="nav-brand">
           <Link to="/">
             <img className="app-logo" alt="logo" src={logo} />
@@ -52,7 +52,7 @@ export default function GraceNoteNav() {
               <DropdownToggle nav caret>
                 Songs
               </DropdownToggle>
-              <DropdownMenu right>
+              <DropdownMenu>
                 <DropdownItem>Your Song List</DropdownItem>
                 <DropdownItem>
                   <Link

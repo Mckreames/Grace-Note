@@ -89,7 +89,7 @@
     width: 100%;
     background: #00c8b479 !important;
     position: absolute;
-    z-index: 999 !important;
+    z-index: 99 !important;
   }
 
   .form-container {
