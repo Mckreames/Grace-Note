@@ -12,7 +12,7 @@ import {
 export default function Search() {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResult, setSearchResult] = useState(null);
-  const [open, setOpen] = useState("1");
+  const [open, setOpen] = useState("0");
 
   const toggle = (id) => {
     if (open === id) {
@@ -61,14 +61,14 @@ export default function Search() {
             type="search"
             id="search"
             name="search"
-            className="col-2 me-4 search-page-search"
+            className="offset-xxl-0 col-12 col-md-3 col-xl-2 me-4 search-page-search"
             placeholder="   🔍   Enter Song Here"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           ></input>
           <button type="submit">Search</button>
         </form>
-        <div className="offset-4 col-4 accordion-sect">
+        <div className="offset-md-2 offset-lg-3 offset-xl-4 col-md-4 col-xl-4 justify-content-center accordion-sect">
           <Accordion open={open} toggle={toggle}>
             <AccordionItem>
               <AccordionHeader className="accordion-header" targetId="1">
@@ -93,18 +93,35 @@ export default function Search() {
       <section className="offset-1 col-10 mb-5 pt-4 search-result">
         <div>
           {searchResult && (
-            <ul className="col-12 flex-wrap d-flex justify-content-evenly">
+            <ul className="col-12 flex-wrap d-xl-flex justify-content-evenly song-list">
               {searchResult.data.map((item) => (
-                <li key={item.id} className="col-3 p-3 m-3 li-result">
-                  <img
-                    className="mb-2 li-img"
-                    src={item.artist.picture_medium}
-                    alt={item.artist.name}
-                  />
-                  <div>
-                    <h4>{item.title}</h4>
-                    <p>Artist: {item.artist.name}</p>
-                  </div>
+                <li
+                  key={item.id}
+                  className="col-12 col-xl-3 p-2 p-xl-3 m-2 m-xl-3 li-result"
+                >
+                  <row>
+                    <img
+                      className="mb-2 d-sm-none d-xl-block li-img"
+                      src={item.artist.picture_medium}
+                      alt={item.artist.name}
+                    />
+                    <div>
+                      <img
+                        className="mb-2 me-4 float-sm-start d-none d-sm-inline d-xl-none li-img"
+                        src={item.artist.picture_medium}
+                        alt={item.artist.name}
+                      />
+                      <h4 className="col-3 me-2 me-xl-0 d-inline col-xl-12">
+                        {item.title}
+                      </h4>
+                    </div>
+
+                    <div>
+                      <p className="col-3 d-inline col-xl-12">
+                        Artist: {item.artist.name}
+                      </p>
+                    </div>
+                  </row>
                 </li>
               ))}
             </ul>
