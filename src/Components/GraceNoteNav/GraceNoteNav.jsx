@@ -25,60 +25,41 @@ export default function GraceNoteNav() {
   return (
     <div className="mb-2 nav-sect">
       <Navbar className="offset-1 col-10" expand="md" style={{ zIndex: 999 }}>
-        <NavbarBrand className="nav-brand">
+        <div className="nav-brand">
           <Link to="/">
             <img className="app-logo" alt="logo" src={logo} />
           </Link>
-        </NavbarBrand>
+        </div>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
-            <NavItem>
-              <Link to="/" style={{ textDecoration: "none" }}>
-                <NavLink>Home</NavLink>
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link to="/song-search" style={{ textDecoration: "none" }}>
-                <NavLink>Search</NavLink>
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link to="/account" style={{ textDecoration: "none" }}>
-                <NavLink>Account</NavLink>
-              </Link>
-            </NavItem>
+            <NavLink tag={Link} to="/">
+              Home
+            </NavLink>
+            <NavLink tag={Link} to="/song-search">
+              Search
+            </NavLink>
+            <NavLink tag={Link} to="/account">
+              Account
+            </NavLink>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Songs
               </DropdownToggle>
               <DropdownMenu>
                 <DropdownItem>Your Song List</DropdownItem>
-                <DropdownItem>
-                  <Link
-                    to="/Randomizer"
-                    style={{ textDecoration: "none", color: "black" }}
-                  >
-                    Song Randomizer
-                  </Link>
+                <DropdownItem tag={Link} to="/Randomizer">
+                  Song Randomizer
                 </DropdownItem>
-
                 <DropdownItem divider />
-                <DropdownItem>
-                  <Link
-                    to="/song-add"
-                    style={{ textDecoration: "none", color: "black" }}
-                  >
-                    Manage Your Songs
-                  </Link>
+                <DropdownItem tag={Link} to="/song-add">
+                  Manage Your Songs
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-            <NavItem>
-              <Link to="/sign-up" style={{ textDecoration: "none" }}>
-                <NavLink>Login</NavLink>
-              </Link>
-            </NavItem>
+            <NavLink tag={Link} to="/sign-up">
+              Login
+            </NavLink>
           </Nav>
           <NavbarText>Wazzup</NavbarText>
         </Collapse>

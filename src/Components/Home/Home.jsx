@@ -219,10 +219,6 @@ export default function Home() {
                 },
               ]}
             />
-            {/* <img className="col-12 home-img"
-                            alt="A man performing into a mic"
-                            src={reach}
-                        /> */}
           </div>
         </div>
         <div className="container-fluid row d-flex call-to-action-sect">

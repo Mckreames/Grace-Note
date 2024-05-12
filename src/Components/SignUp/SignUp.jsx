@@ -206,7 +206,7 @@ export default function SignUp() {
       </div>
       <div className="col-6 pt-sm-5 sign-up-form">
         <div className="offset-sm-1 offset-xl-0 col-sm-10 col-xl-12 pb-5 pb-xl-none form-container">
-          <h1 className="mt-5 pt-5 color-light-grey welcome-back">
+          <h1 className="mt-5 mt-xl-0 pt-5 pt-xl-2 color-light-grey welcome-back">
             Welcome Back!
           </h1>
           <h2 className="pb-sm-4 ">

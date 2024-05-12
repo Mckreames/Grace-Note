@@ -7,6 +7,7 @@ import {
   AccordionHeader,
   AccordionItem,
   NavLink,
+  Row,
 } from "reactstrap";
 
 export default function Search() {
@@ -23,7 +24,7 @@ export default function Search() {
   };
 
   const handleSubmit = async (event) => {
-    if (event === undefined) {
+    if (event === undefined || event === null || event === " ") {
       return;
     } else {
       event.preventDefault();
@@ -57,6 +58,7 @@ export default function Search() {
         </h2>
         <form className="mb-3" onSubmit={handleSubmit}>
           <input
+            required
             aria-label="search"
             type="search"
             id="search"
@@ -99,29 +101,27 @@ export default function Search() {
                   key={item.id}
                   className="col-12 col-xl-3 p-2 p-xl-3 m-2 m-xl-3 li-result"
                 >
-                  <row>
+                  <img
+                    className="mb-2 d-sm-none d-xl-block li-img"
+                    src={item.artist.picture_medium}
+                    alt={item.artist.name}
+                  />
+                  <div>
                     <img
-                      className="mb-2 d-sm-none d-xl-block li-img"
+                      className="mb-2 me-4 float-sm-start d-none d-sm-inline d-xl-none li-img"
                       src={item.artist.picture_medium}
                       alt={item.artist.name}
                     />
-                    <div>
-                      <img
-                        className="mb-2 me-4 float-sm-start d-none d-sm-inline d-xl-none li-img"
-                        src={item.artist.picture_medium}
-                        alt={item.artist.name}
-                      />
-                      <h4 className="col-3 me-2 me-xl-0 d-inline col-xl-12">
-                        {item.title}
-                      </h4>
-                    </div>
+                    <h4 className="col-3 me-2 me-xl-0 d-inline col-xl-12">
+                      {item.title}
+                    </h4>
+                  </div>
 
-                    <div>
-                      <p className="col-3 d-inline col-xl-12">
-                        Artist: {item.artist.name}
-                      </p>
-                    </div>
-                  </row>
+                  <div>
+                    <p className="col-3 d-inline col-xl-12">
+                      Artist: {item.artist.name}
+                    </p>
+                  </div>
                 </li>
               ))}
             </ul>
