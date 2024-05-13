@@ -14,7 +14,7 @@ export default function Footer() {
         <p>Terms of Service</p>
       </Link>
       <Link
-        to="/about-us"
+        to="/about"
         style={{ textDecoration: "none" }}
         className="col-2 foot-link"
       >

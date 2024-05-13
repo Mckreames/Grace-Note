@@ -4,7 +4,7 @@ import OneHand from "./Imgs/OneHandLifted.jpg";
 
 export default function About() {
   return (
-    <div className="about-sect">
+    <div className="container-fluid about-sect">
       <div className="row">
         <img
           className="mt-1 col-6 about-img"
