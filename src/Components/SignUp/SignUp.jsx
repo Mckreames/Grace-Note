@@ -235,7 +235,7 @@ export default function SignUp() {
               </Col>
               <Col>
                 <Label className="visually-hidden" for="examplePassword">
-                  Email
+                  Password
                 </Label>
                 <Input
                   className="me-xxl-5"
