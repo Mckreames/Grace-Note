@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Grace-Note/static/css/main.ad21ad84.css",
-    "main.js": "/Grace-Note/static/js/main.fd973129.js",
+    "main.js": "/Grace-Note/static/js/main.4ae1471a.js",
     "static/media/Acoustics.jpg": "/Grace-Note/static/media/Acoustics.15d6e65954bebc6441c1.jpg",
     "static/media/threeGuitars.jpg": "/Grace-Note/static/media/threeGuitars.119a44c8b4f0cf77db2e.jpg",
     "static/media/WhiteCasset.jpg": "/Grace-Note/static/media/WhiteCasset.1d55423f277ba4fb5335.jpg",
@@ -36,10 +36,10 @@
     "static/media/LogoOnly.png": "/Grace-Note/static/media/LogoOnly.00c3de19fa2fb94f8ea8.png",
     "index.html": "/Grace-Note/index.html",
     "main.ad21ad84.css.map": "/Grace-Note/static/css/main.ad21ad84.css.map",
-    "main.fd973129.js.map": "/Grace-Note/static/js/main.fd973129.js.map"
+    "main.4ae1471a.js.map": "/Grace-Note/static/js/main.4ae1471a.js.map"
   },
   "entrypoints": [
     "static/css/main.ad21ad84.css",
-    "static/js/main.fd973129.js"
+    "static/js/main.4ae1471a.js"
   ]
 }
