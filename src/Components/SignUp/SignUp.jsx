@@ -22,7 +22,7 @@ import TwoGirls from "./Imgs/TwoGirls.jpg";
 export default function SignUp() {
   return (
     <div className="offset-0 offset-md-1 row col-12 col-md-10 sign-up-sheet">
-      <div className=" col-6 sign-up-layer">
+      <div className="col-6 sign-up-layer">
         <img className="fade1 sign-up-img" alt="scroll-img" src={redhead}></img>
         <img
           className="fade2 sign-up-img"

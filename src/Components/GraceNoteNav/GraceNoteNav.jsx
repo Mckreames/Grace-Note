@@ -22,6 +22,8 @@ export default function GraceNoteNav() {
 
   const toggle = () => setIsOpen(!isOpen);
 
+  const closeNavbar = () => setIsOpen(false);
+
   return (
     <div className="mb-2 nav-sect">
       <Navbar className="offset-1 col-10" expand="md" style={{ zIndex: 999 }}>
@@ -33,13 +35,13 @@ export default function GraceNoteNav() {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
-            <NavLink tag={Link} to="/">
+            <NavLink tag={Link} to="/" onClick={closeNavbar}>
               Home
             </NavLink>
-            <NavLink tag={Link} to="/song-search">
+            <NavLink tag={Link} to="/song-search" onClick={closeNavbar}>
               Search
             </NavLink>
-            {/* <NavLink tag={Link} to="/account">
+            {/* <NavLink tag={Link} to="/account" onClick={closeNavbar}>
               Account
             </NavLink> */}
             <UncontrolledDropdown nav inNavbar>
@@ -48,16 +50,16 @@ export default function GraceNoteNav() {
               </DropdownToggle>
               <DropdownMenu>
                 <DropdownItem>Your Song List</DropdownItem>
-                <DropdownItem tag={Link} to="/Randomizer">
+                <DropdownItem tag={Link} to="/Randomizer" onClick={closeNavbar}>
                   Song Randomizer
                 </DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem tag={Link} to="/song-add">
+                <DropdownItem tag={Link} to="/song-add" onClick={closeNavbar}>
                   Manage Your Songs
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-            <NavLink tag={Link} to="/sign-up">
+            <NavLink tag={Link} to="/sign-up" onClick={closeNavbar}>
               Login
             </NavLink>
           </Nav>
