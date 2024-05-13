@@ -39,9 +39,9 @@ export default function GraceNoteNav() {
             <NavLink tag={Link} to="/song-search">
               Search
             </NavLink>
-            <NavLink tag={Link} to="/account">
+            {/* <NavLink tag={Link} to="/account">
               Account
-            </NavLink>
+            </NavLink> */}
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Songs
@@ -61,7 +61,7 @@ export default function GraceNoteNav() {
               Login
             </NavLink>
           </Nav>
-          <NavbarText>Wazzup</NavbarText>
+          <NavbarText></NavbarText>
         </Collapse>
       </Navbar>
     </div>

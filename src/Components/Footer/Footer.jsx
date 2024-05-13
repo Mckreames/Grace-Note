@@ -4,7 +4,7 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <div className="container-fluid row pt-5 pb-3 foot-sheet">
+    <div className="row col-12 pt-5 pb-3 foot-sheet">
       <p className="col-2">all rights reserved</p>
       <Link
         to="/terms-of-service"

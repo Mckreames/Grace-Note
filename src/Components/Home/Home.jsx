@@ -221,7 +221,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="container-fluid row d-flex call-to-action-sect">
+        <div className=" row d-flex call-to-action-sect">
           <div className="d-none d-md-block offset-1 col-10 col-md-4 phone">
             <img
               className="col-12 mb-5 home-img phone-img"
