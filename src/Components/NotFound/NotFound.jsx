@@ -22,7 +22,6 @@ export default function NotFound() {
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
-      // window.onmousemove = (e) => animateBubble(e.clientX);
     };
   }, []);
 

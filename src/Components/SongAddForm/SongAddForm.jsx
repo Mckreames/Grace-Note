@@ -5,9 +5,6 @@ import "./SongListPersonal.css";
 function SongItem({ id, name, artist, songKey, bpm, deleteItem }) {
   return (
     <div className="col p-2 pb-lg-5 pt-lg-3 pb-xl-2 pt-xl-2 song-item">
-      {/* <div className=" col-1 song-info">
-        <span className="pe-4 info-value">{id}</span>
-      </div> */}
       <div className="offset-1 col-4 song-info">
         <span className="info-label">Name: </span>
         <h4 className="info-value">{name}</h4>
@@ -44,18 +41,6 @@ export default function SongAddForm({ id }) {
   const [bpm, setBPM] = useState(0);
 
   useEffect(loadData, []);
-
-  //   const ItemsJsx = songItem.map((listItem) => (
-  //     <SongItem
-  //       key={listItem.id}
-  //       id={listItem.id}
-  //       name={listItem.name}
-  //       artist={listItem.artist}
-  //       songKey={listItem.songKey}
-  //       bpm={listItem.bpm}
-  //       deleteItem={deleteItem}
-  //     />
-  //   ));
 
   function loadData() {
     fetch("https://628frj-8080.csb.app/api/list")
