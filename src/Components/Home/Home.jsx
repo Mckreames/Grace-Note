@@ -15,17 +15,17 @@ import phoneNotifications from "./Imgs/phoneNotifications.png";
 import { Link } from "react-router-dom";
 import {
   UncontrolledCarousel,
-  Button,
-  Modal,
-  ModalHeader,
-  ModalBody,
-  ModalFooter,
+  //   Button,
+  //   Modal,
+  //   ModalHeader,
+  //   ModalBody,
+  //   ModalFooter,
 } from "reactstrap";
 
 export default function Home() {
-  const [modal, setModal] = useState(false);
+  // const [modal, setModal] = useState(false);
 
-  const toggle = () => setModal(!modal);
+  // const toggle = () => setModal(!modal);
 
   return (
     <>
@@ -41,6 +41,14 @@ export default function Home() {
           src={logo}
         />
       </header>
+      <div className="overlay hidden"></div>
+      <div className="col-10 newsletter-modal hidden">
+        <h1>Stay In The Loop!</h1>
+        <h4 className="offset-2 col-8">
+          Stay up to date with new music, get suggestions for new Sound Circles,
+          and be notified about events near you
+        </h4>
+      </div>
       <main className="overflow-x-hidden">
         <div className="row pb-5 welcome">
           <div className="offset-1 col-10 col-md-4 pt-5 welcome-text">
