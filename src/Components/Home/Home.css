@@ -30,6 +30,11 @@
   height: 40vw;
 }
 
+.form-container {
+  box-shadow: 0 0 10px black;
+  border-radius: 20px;
+}
+
 .home-img {
   border-radius: 4000px;
   box-shadow: 0 0 20px black;

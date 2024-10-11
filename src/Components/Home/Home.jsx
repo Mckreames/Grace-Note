@@ -43,11 +43,66 @@ export default function Home() {
       </header>
       <div className="overlay hidden"></div>
       <div className="col-10 newsletter-modal hidden">
-        <h1>Stay In The Loop!</h1>
-        <h4 className="offset-2 col-8">
-          Stay up to date with new music, get suggestions for new Sound Circles,
-          and be notified about events near you
-        </h4>
+        <div className="mb-5">
+          <h1>Stay In The Loop!</h1>
+          <h4 className="offset-2 col-8">
+            Stay up to date with new music, get suggestions for new Sound
+            Circles, and be notified about events near you
+          </h4>
+        </div>
+        <div className="offset-1 col-5 mt-5 form-container">
+          <form
+            class="row offset-1 col-10  justify-content-center"
+            id="signupForm"
+          >
+            <h2 className="mt-3 mb-4">
+              <span class="orange">Sign Up!</span>
+            </h2>
+            <div class="mb-4 col-md-12">
+              <label for="inputEmail4" class="form-label">
+                Email
+              </label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail4"
+                required
+              />
+            </div>
+            <div class="mb-4 col-md-10">
+              <label for="inputPassword4" class="form-label">
+                Password
+              </label>
+              <input
+                type="password"
+                class="form-control"
+                id="inputPassword4"
+                required
+              />
+            </div>
+            <div class="mb-4 col-12">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
+                />
+                <label
+                  class="form-check-label newsletter-label"
+                  for="gridCheck"
+                >
+                  Sign up for our newsletter!
+                </label>
+              </div>
+            </div>
+            <div class="mb-4 col-12 d-flex justify-content-center">
+              <button type="submit" class="btn btn-primary close-modal">
+                Sign in
+              </button>
+            </div>
+          </form>
+        </div>
+        <div className="newsletter-img"></div>
       </div>
       <main className="overflow-x-hidden">
         <div className="row pb-5 welcome">
