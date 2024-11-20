@@ -12,6 +12,7 @@ import guitarLean from "./Imgs/guitarLean.jpg";
 import HandsUpNobodyMove from "./Imgs/HandsUpNobodyMove.jpg";
 import threeGuitars from "./Imgs/threeGuitars.jpg";
 import phoneNotifications from "./Imgs/phoneNotifications.png";
+import spaceJam from "./Imgs/Space_Jam.webm";
 import { Link } from "react-router-dom";
 import {
   UncontrolledCarousel,
@@ -102,7 +103,13 @@ export default function Home() {
             </div>
           </form>
         </div>
-        <div className="newsletter-img"></div>
+        <div className="newsletter-img">
+          <img
+            className=""
+            alt="An astronaut bouncing his head to music"
+            src={spaceJam}
+          />
+        </div>
       </div>
       <main className="overflow-x-hidden">
         <div className="row pb-5 welcome">
