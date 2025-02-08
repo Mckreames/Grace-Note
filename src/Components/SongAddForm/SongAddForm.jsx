@@ -34,7 +34,7 @@ function SongItem({ id, name, artist, songKey, bpm, deleteItem }) {
 }
 
 export default function SongAddForm({ id }) {
-  const [songItem, setSongItem] = useState([]);
+  const [songItem, setSongItem] = useState(id);
   const [name, setName] = useState("");
   const [artist, setArtist] = useState("");
   const [songKey, setSongKey] = useState("");
